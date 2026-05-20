@@ -9,48 +9,143 @@ DISCOVERED_SITES_FILE = "newly_discovered_sites.txt"
 NEWS_SITES_CSV_FILE = "news_sites.csv"
 
 
-def save_sites_to_file(sites, filepath=DISCOVERED_SITES_FILE):
-    """Writes discovered news site URLs to a plain text file, one URL per line."""
+def save_sites_to_file(sites, location_info=None, filepath=DISCOVERED_SITES_FILE):
+    """
+    Writes discovered news site URLs to a plain text file, one URL per line.
+    Metadata (country, state) is written as comment lines at the top so
+    news_scraping_script.py can read them for context-aware keyword matching.
+    """
     with open(filepath, "w", encoding="utf-8") as f:
+        if location_info:
+            f.write(f"# COUNTRY: {location_info.get('country', '')}\n")
+            f.write(f"# STATE: {location_info.get('state', '')}\n")
         for site in sites:
             f.write(site["url"] + "\n")
     print(f"Saved {len(sites)} URLs to '{filepath}'")
 
 
-def save_sites_to_csv(national_sites, state_sites, location_info, filepath=NEWS_SITES_CSV_FILE):
+def save_sites_to_csv(national_sites, state_sites, location_info, filepath=None):
     """
-    Saves all discovered sites to a CSV with columns:
-    name, url, address, scope (national/state), country, state.
+    Saves all discovered sites to a CSV named after the state
+    (e.g. plateau_news_sites.csv).  National and state/local sections are
+    separated by a blank row and a section-header row so the file is easy
+    to read in any spreadsheet tool.
+
+    Both sections include the state column so every row is fully labelled.
     """
+    country = location_info["country"]
+    state = location_info.get("state") or ""
+
+    # Build filename from state name, falling back to the default constant
+    if filepath is None:
+        if state:
+            state_slug = state.lower().replace(" ", "_")
+            filepath = f"{state_slug}_news_sites.csv"
+        else:
+            filepath = NEWS_SITES_CSV_FILE
+
     fieldnames = ["name", "url", "address", "scope", "country", "state"]
-    rows = [
-        {
-            "name": s["name"],
-            "url": s["url"],
-            "address": s.get("address") or "",
-            "scope": "national",
-            "country": location_info["country"],
-            "state": "",
-        }
-        for s in national_sites
-    ] + [
-        {
-            "name": s["name"],
-            "url": s["url"],
-            "address": s.get("address") or "",
-            "scope": "state",
-            "country": location_info["country"],
-            "state": location_info.get("state") or "",
-        }
-        for s in state_sites
-    ]
+    blank_row = {f: "" for f in fieldnames}
 
     with open(filepath, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(rows)
 
-    print(f"Saved {len(rows)} sites ({len(national_sites)} national, {len(state_sites)} state) to '{filepath}'")
+        # ── National section ─────────────────────────────────────────────────
+        writer.writerow({**blank_row, "name": f"=== NATIONAL NEWS SITES ({country}) ==="})
+        for s in national_sites:
+            writer.writerow({
+                "name": s["name"],
+                "url": s["url"],
+                "address": s.get("address") or "",
+                "scope": "national",
+                "country": country,
+                "state": state,
+            })
+
+        # ── State / local section ─────────────────────────────────────────────
+        if state_sites:
+            writer.writerow(blank_row)
+            writer.writerow({**blank_row, "name": f"=== STATE/LOCAL NEWS SITES ({state}) ==="})
+            for s in state_sites:
+                writer.writerow({
+                    "name": s["name"],
+                    "url": s["url"],
+                    "address": s.get("address") or "",
+                    "scope": "state",
+                    "country": country,
+                    "state": state,
+                })
+
+    total = len(national_sites) + len(state_sites)
+    print(f"Saved {total} sites ({len(national_sites)} national, {len(state_sites)} state) to '{filepath}'")
+
+
+# ── Site Reputation Scoring ───────────────────────────────────────────────────
+# Known reputable outlets mapped by partial domain → trust score (0–100).
+# Higher score = better editorial reputation and reach.
+_TRUSTED_DOMAINS = {
+    # Global / pan-African
+    "bbc.com": 100, "reuters.com": 100, "apnews.com": 99,
+    "aljazeera.com": 98, "voanews.com": 94, "france24.com": 94,
+    "dw.com": 93, "bloomberg.com": 96, "africanews.com": 85,
+    # Major Nigerian national outlets
+    "channelstv.com": 96, "nta.ng": 90, "premiumtimesng.com": 93,
+    "punchng.com": 92, "vanguardngr.com": 90, "dailytrust.com": 91,
+    "thisdaylive.com": 89, "leadership.ng": 88,
+    "thenationonlineng.net": 88, "guardian.ng": 88,
+    "gazettengr.com": 85, "tvcnews.tv": 84, "trusttv.com": 82,
+    "radionigeria.gov.ng": 80, "aitonline.tv": 80,
+    "businessday.ng": 86, "coolfm.ng": 72,
+    "newscentral.africa": 78, "thenews-chronicle.com": 70,
+    # Plateau / North-central Nigeria
+    "prtvc.net": 80,
+}
+_LOW_QUALITY = {
+    "blogspot", "wordpress.com", "facebook.com", "twitter.com",
+    "wix.com", "weebly.com", "tumblr.com",
+}
+
+
+def _score_site(site):
+    """
+    Returns a trust score (0–100) for a news site.  Known reputable outlets
+    are matched by domain; unknown sites are scored by quality heuristics.
+    """
+    url = site.get("url", "")
+    # Simple domain extraction without an extra import
+    domain = url.split("//")[-1].split("/")[0].replace("www.", "").lower()
+
+    for known, score in _TRUSTED_DOMAINS.items():
+        if known in domain:
+            return score
+
+    if any(lq in domain for lq in _LOW_QUALITY):
+        return 0
+
+    score = 40
+    if url.startswith("https://"):
+        score += 10
+    if ".gov." in domain:
+        score += 15
+    name = (site.get("name") or "").lower()
+    if any(x in name for x in ["rosacomms", "bluetoolz", "virtual media"]):
+        score -= 30
+    return min(score, 69)  # Heuristic ceiling keeps whitelisted sites on top
+
+
+def select_top_sites(national_sites, state_sites, top_n=10):
+    """
+    Ranks national sites by trust score and returns the top *top_n*.
+    All state/local sites are kept when there are *top_n* or fewer;
+    otherwise the top *top_n* state sites are returned.
+    """
+    top_national = sorted(national_sites, key=_score_site, reverse=True)[:top_n]
+    if len(state_sites) <= top_n:
+        top_state = state_sites
+    else:
+        top_state = sorted(state_sites, key=_score_site, reverse=True)[:top_n]
+    return top_national, top_state
 
 
 def get_location_from_coords(lat, lng, api_key):
@@ -229,20 +324,26 @@ if __name__ == "__main__":
         state_sites = [s for s in state_sites_raw if s["url"] not in national_urls]
 
     all_sites = national_sites + state_sites
-    save_sites_to_file(all_sites)
-    save_sites_to_csv(national_sites, state_sites, location_info)
 
-    print(f"\n--- National News Sites in {country} ({len(national_sites)}) ---")
-    for i, site in enumerate(national_sites, 1):
+    print("\nRanking and selecting top sites...")
+    top_national, top_state = select_top_sites(national_sites, state_sites)
+    print(f"Selected {len(top_national)} national and {len(top_state)} state/local sites.")
+
+    all_top_sites = top_national + top_state
+    save_sites_to_file(all_top_sites, location_info=location_info)
+    save_sites_to_csv(top_national, top_state, location_info)
+
+    print(f"\n--- Top {len(top_national)} National News Sites in {country} ---")
+    for i, site in enumerate(top_national, 1):
         print(f"{i}. {site['name']}")
         print(f"   Website: {site['url']}")
         if site["address"]:
             print(f"   Address: {site['address']}")
         print()
 
-    if state_sites:
-        print(f"--- State/Local News Sites in {state} ({len(state_sites)}) ---")
-        for i, site in enumerate(state_sites, 1):
+    if top_state:
+        print(f"--- State/Local News Sites in {state} ({len(top_state)}) ---")
+        for i, site in enumerate(top_state, 1):
             print(f"{i}. {site['name']}")
             print(f"   Website: {site['url']}")
             if site["address"]:

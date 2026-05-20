@@ -1,13 +1,37 @@
+import csv
+import glob
+import logging
 import os
 import re
 import time
 import nltk
 import requests
 from bs4 import BeautifulSoup
+from logging.handlers import RotatingFileHandler
 from nltk.stem import WordNetLemmatizer
 from urllib.parse import urlparse
 
 DISCOVERED_SITES_FILE = "discovered_sites.txt"
+LOG_FILE = "news_scraping.log"
+
+# ── Logging setup ─────────────────────────────────────────────────────────
+def _configure_logging():
+    fmt = logging.Formatter(
+        "%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
+    )
+    file_handler = RotatingFileHandler(
+        LOG_FILE, maxBytes=5 * 1024 * 1024, backupCount=3, encoding="utf-8"
+    )
+    file_handler.setFormatter(fmt)
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(fmt)
+    root = logging.getLogger()
+    root.setLevel(logging.INFO)
+    root.addHandler(file_handler)
+    root.addHandler(console_handler)
+
+_configure_logging()
+logger = logging.getLogger(__name__)
 
 # ── Keyword Configuration ─────────────────────────────────────────────────────
 # Articles not matching at least one keyword (or a morphological variant of it)
@@ -88,31 +112,53 @@ class KeywordMatcher:
         return matched
 
 
-def load_discovered_sites(filepath=DISCOVERED_SITES_FILE):
+def load_discovered_sites(filepath=None):
     """
-    Reads URLs from a discovered_sites.txt file (written by local_news_sites_finder.py)
-    and returns a config dict with generic CSS selectors for each site.
-    Sites already present in NEWS_CONFIG are skipped.
+    Reads site URLs and metadata from a CSV file written by local_news_sites_finder.py.
+    If filepath is None, the most recently modified *_news_sites.csv file in the
+    working directory is used automatically.
+    Returns a (config, metadata) tuple.
     """
+    if filepath is None:
+        matches = sorted(glob.glob("*_news_sites.csv"), key=os.path.getmtime, reverse=True)
+        if not matches:
+            logger.warning("No *_news_sites.csv file found. Run local_news_sites_finder.py first.")
+            return {}, {}
+        filepath = matches[0]
+        logger.info(f"Using site list: '{filepath}'")
+
     if not os.path.exists(filepath):
-        return {}
+        return {}, {}
 
     config = {}
+    metadata = {}
     with open(filepath, "r", encoding="utf-8") as f:
-        for line in f:
-            url = line.strip()
-            if not url or url.startswith("#"):
+        reader = csv.DictReader(f)
+        for row in reader:
+            url = (row.get("url") or "").strip()
+            name = (row.get("name") or "").strip()
+
+            # Skip blank rows and section-header rows (=== ... ===)
+            if not url or name.startswith("==="):
                 continue
+
+            # Extract country/state from the first valid data row
+            if not metadata.get("country") and row.get("country"):
+                metadata["country"] = row["country"].strip()
+            if not metadata.get("state") and row.get("state"):
+                metadata["state"] = row["state"].strip()
+
             domain = urlparse(url).netloc.replace("www.", "")
-            name = domain.split(".")[0] if domain else url
-            config[name] = {
+            site_name = domain.split(".")[0] if domain else name
+            config[site_name] = {
                 "url": url,
                 "container_selector": "article",
                 "title_selector": "h2, h3, h1",
                 "link_selector": "a",
             }
-    print(f"Loaded {len(config)} sites from '{filepath}'")
-    return config
+
+    logger.info(f"Loaded {len(config)} sites from '{filepath}'")
+    return config, metadata
 
 # Configuration for different news channels
 # You will need to inspect the target sites to find the correct CSS selectors
@@ -132,9 +178,9 @@ NEWS_CONFIG = {
 }
 
 class NewsCrawler:
-    def __init__(self, config):
+    def __init__(self, config, keywords=None):
         self.config = config
-        self.matcher = KeywordMatcher(KEYWORDS)
+        self.matcher = KeywordMatcher(keywords or KEYWORDS)
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
@@ -146,10 +192,10 @@ class NewsCrawler:
             if response.status_code == 200:
                 return response.text
             else:
-                print(f"Failed to fetch {url}: Status code {response.status_code}")
+                logger.warning(f"Failed to fetch {url}: Status code {response.status_code}")
                 return None
         except requests.RequestException as e:
-            print(f"Error fetching {url}: {e}")
+            logger.error(f"Error fetching {url}: {e}")
             return None
 
     def parse_news(self, site_name, html):
@@ -196,12 +242,11 @@ class NewsCrawler:
         """Iterates through all configured sites and gathers articles."""
         all_results = []
         for site_name, target in self.config.items():
-            print(f"Crawling {site_name}...")
+            logger.info(f"Crawling {site_name}...")
             html = self.fetch_page(target["url"])
             site_articles = self.parse_news(site_name, html)
             all_results.extend(site_articles)
-            
-            print(f"Found {len(site_articles)} articles from {site_name}.")
+            logger.info(f"Found {len(site_articles)} articles from {site_name}.")
             # Politeness delay: wait 2 seconds between hitting different sites
             time.sleep(2) 
             
@@ -211,13 +256,22 @@ class NewsCrawler:
 if __name__ == "__main__":
     # Merge hardcoded config with any sites discovered by local_news_sites_finder.py.
     # Hardcoded entries take priority (discovered sites won't overwrite them).
-    discovered = load_discovered_sites()
+    discovered, site_metadata = load_discovered_sites()
     config = {**discovered, **NEWS_CONFIG}
-    crawler = NewsCrawler(config)
+
+    # Add the state name to keywords so articles mentioning the local state
+    # are captured even if they don't match the base keyword list.
+    active_keywords = list(KEYWORDS)
+    state = site_metadata.get("state", "").strip()
+    if state and state not in active_keywords:
+        active_keywords.append(state)
+        logger.info(f"Added '{state}' to keyword list for local relevance matching.")
+
+    crawler = NewsCrawler(config, keywords=active_keywords)
     scraped_data = crawler.crawl_all()
-    
-    print("\n--- Scraped Headlines ---")
+
+    logger.info("--- Scraped Headlines ---")
     for idx, article in enumerate(scraped_data, 1):
-        print(f"{idx}. [{article['source'].upper()}] {article['title']}")
-        print(f"   Keywords : {', '.join(article['matched_keywords'])}")
-        print(f"   Link     : {article['link']}\n")
+        logger.info(f"{idx}. [{article['source'].upper()}] {article['title']}")
+        logger.info(f"   Keywords : {', '.join(article['matched_keywords'])}")
+        logger.info(f"   Link     : {article['link']}")
