@@ -1,0 +1,1576 @@
+2026-05-20 22:15:04 [INFO] Using site list: 'plateau_news_sites.csv'
+2026-05-20 22:15:04 [INFO] Loaded 98 sites from 'plateau_news_sites.csv'
+2026-05-20 22:15:04 [INFO] Added 'Plateau' to keyword list for local relevance matching.
+2026-05-20 22:15:14 [INFO] Crawling nta...
+2026-05-20 22:15:15 [INFO] Found 1 articles from nta.
+2026-05-20 22:15:17 [INFO] Crawling newscentral...
+2026-05-20 22:15:19 [INFO] Found 8 articles from newscentral.
+2026-05-20 22:15:21 [INFO] Crawling tntnewsonline...
+2026-05-20 22:15:24 [INFO] Found 0 articles from tntnewsonline.
+2026-05-20 22:15:26 [INFO] Crawling channelstv...
+2026-05-20 22:15:29 [INFO] Found 24 articles from channelstv.
+2026-05-20 22:15:31 [INFO] Crawling thenigerian...
+2026-05-20 22:15:31 [INFO] Found 17 articles from thenigerian.
+2026-05-20 22:15:33 [INFO] Crawling nigeriannewsline...
+2026-05-20 22:15:33 [ERROR] Error fetching https://www.nigeriannewsline.com/: HTTPSConnectionPool(host='www.nigeriannewsline.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.nigeriannewsline.com', port=443): Failed to resolve 'www.nigeriannewsline.com' ([Errno -2] Name or service not known)"))
+2026-05-20 22:15:33 [INFO] Found 0 articles from nigeriannewsline.
+2026-05-20 22:15:35 [INFO] Crawling dailytrust...
+2026-05-20 22:15:36 [INFO] Found 0 articles from dailytrust.
+2026-05-20 22:15:38 [INFO] Crawling naturenews...
+2026-05-20 22:15:40 [INFO] Found 5 articles from naturenews.
+2026-05-20 22:15:42 [INFO] Crawling thenews-chronicle...
+2026-05-20 22:15:46 [INFO] Found 0 articles from thenews-chronicle.
+2026-05-20 22:15:48 [INFO] Crawling adbntv...
+2026-05-20 22:15:57 [INFO] Found 0 articles from adbntv.
+2026-05-20 22:15:59 [INFO] Crawling newslodge...
+2026-05-20 22:15:59 [INFO] Found 0 articles from newslodge.
+2026-05-20 22:16:01 [INFO] Crawling nationaltelescope...
+2026-05-20 22:16:03 [INFO] Found 0 articles from nationaltelescope.
+2026-05-20 22:16:05 [INFO] Crawling tvcnews...
+2026-05-20 22:16:07 [INFO] Found 9 articles from tvcnews.
+2026-05-20 22:16:09 [INFO] Crawling channelnetworkafrique...
+2026-05-20 22:16:12 [INFO] Found 5 articles from channelnetworkafrique.
+2026-05-20 22:16:14 [INFO] Crawling silverbirdgroup...
+2026-05-20 22:16:15 [INFO] Found 0 articles from silverbirdgroup.
+2026-05-20 22:16:17 [INFO] Crawling trusttv...
+2026-05-20 22:16:18 [INFO] Found 0 articles from trusttv.
+2026-05-20 22:16:20 [INFO] Crawling globaltvabuja...
+2026-05-20 22:16:22 [INFO] Found 0 articles from globaltvabuja.
+2026-05-20 22:16:24 [INFO] Crawling ourtv...
+2026-05-20 22:16:28 [INFO] Found 0 articles from ourtv.
+2026-05-20 22:16:30 [INFO] Crawling tv360nigeria...
+2026-05-20 22:16:41 [ERROR] Error fetching https://www.tv360nigeria.com/: HTTPSConnectionPool(host='www.tv360nigeria.com', port=443): Read timed out. (read timeout=10)
+2026-05-20 22:16:41 [INFO] Found 0 articles from tv360nigeria.
+2026-05-20 22:16:43 [INFO] Crawling signaturetv...
+2026-05-20 22:16:44 [WARNING] Failed to fetch http://www.signaturetv.org/: Status code 403
+2026-05-20 22:16:44 [INFO] Found 0 articles from signaturetv.
+2026-05-20 22:16:46 [INFO] Crawling facebook...
+2026-05-20 22:16:47 [WARNING] Failed to fetch http://www.facebook.com/humanrightsradio101.1: Status code 400
+2026-05-20 22:16:47 [INFO] Found 0 articles from facebook.
+2026-05-20 22:16:49 [INFO] Crawling virtualmediang...
+2026-05-20 22:16:52 [INFO] Found 0 articles from virtualmediang.
+2026-05-20 22:16:54 [INFO] Crawling lagostelevision...
+2026-05-20 22:16:55 [INFO] Found 7 articles from lagostelevision.
+2026-05-20 22:16:57 [INFO] Crawling aitlive...
+2026-05-20 22:16:59 [INFO] Found 0 articles from aitlive.
+2026-05-20 22:17:01 [INFO] Crawling tostvnetwork...
+2026-05-20 22:17:11 [ERROR] Error fetching http://www.tostvnetwork.com/: HTTPConnectionPool(host='www.tostvnetwork.com', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='www.tostvnetwork.com', port=80) at 0x7504b6e89d00>, 'Connection to www.tostvnetwork.com timed out. (connect timeout=10)'))
+2026-05-20 22:17:11 [INFO] Found 0 articles from tostvnetwork.
+2026-05-20 22:17:13 [INFO] Crawling ustvafrica...
+2026-05-20 22:17:16 [INFO] Found 0 articles from ustvafrica.
+2026-05-20 22:17:18 [INFO] Crawling nigeriastandardng...
+2026-05-20 22:17:20 [INFO] Found 0 articles from nigeriastandardng.
+2026-05-20 22:17:22 [INFO] Crawling ctvnigeria...
+2026-05-20 22:17:22 [ERROR] Error fetching http://ctvnigeria.org/: HTTPConnectionPool(host='ctvnigeria.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='ctvnigeria.org', port=80): Failed to resolve 'ctvnigeria.org' ([Errno -2] Name or service not known)"))
+2026-05-20 22:17:22 [INFO] Found 0 articles from ctvnigeria.
+2026-05-20 22:17:24 [INFO] Crawling coolfm...
+2026-05-20 22:17:25 [INFO] Found 0 articles from coolfm.
+2026-05-20 22:17:26 [INFO] Crawling qualitytvng...
+2026-05-20 22:17:28 [INFO] Found 0 articles from qualitytvng.
+2026-05-20 22:17:30 [INFO] Crawling acnntv...
+2026-05-20 22:17:31 [WARNING] Failed to fetch http://www.acnntv.com/: Status code 403
+2026-05-20 22:17:31 [INFO] Found 0 articles from acnntv.
+2026-05-20 22:17:33 [INFO] Crawling nationaleconomy...
+2026-05-20 22:17:35 [INFO] Found 2 articles from nationaleconomy.
+2026-05-20 22:17:37 [INFO] Crawling thenationonlineng...
+2026-05-20 22:17:40 [INFO] Found 0 articles from thenationonlineng.
+2026-05-20 22:17:42 [INFO] Crawling nationaldailyng...
+2026-05-20 22:17:51 [INFO] Found 0 articles from nationaldailyng.
+2026-05-20 22:17:53 [INFO] Crawling leadership...
+2026-05-20 22:17:54 [INFO] Found 6 articles from leadership.
+2026-05-20 22:17:56 [INFO] Crawling peoplesdailyng...
+2026-05-20 22:17:59 [WARNING] Failed to fetch http://peoplesdailyng.com/: Status code 403
+2026-05-20 22:17:59 [INFO] Found 0 articles from peoplesdailyng.
+2026-05-20 22:18:01 [INFO] Crawling nationalaccordnewspaper...
+2026-05-20 22:18:03 [INFO] Found 0 articles from nationalaccordnewspaper.
+2026-05-20 22:18:05 [INFO] Crawling ournigerianews...
+2026-05-20 22:18:08 [INFO] Found 13 articles from ournigerianews.
+2026-05-20 22:18:10 [INFO] Crawling frontlinenews...
+2026-05-20 22:18:15 [INFO] Found 3 articles from frontlinenews.
+2026-05-20 22:18:17 [INFO] Crawling lens...
+2026-05-20 22:18:18 [WARNING] Failed to fetch https://lens.ng/: Status code 403
+2026-05-20 22:18:18 [INFO] Found 0 articles from lens.
+2026-05-20 22:18:20 [INFO] Crawling nigeriatodaymagazine...
+2026-05-20 22:18:21 [WARNING] Failed to fetch https://www.nigeriatodaymagazine.com/: Status code 403
+2026-05-20 22:18:21 [INFO] Found 0 articles from nigeriatodaymagazine.
+2026-05-20 22:18:23 [INFO] Crawling opinionnigeria...
+2026-05-20 22:18:23 [INFO] Found 0 articles from opinionnigeria.
+2026-05-20 22:18:25 [INFO] Crawling mediabypassnews...
+2026-05-20 22:18:33 [INFO] Found 12 articles from mediabypassnews.
+2026-05-20 22:18:35 [INFO] Crawling newspointnigeria...
+2026-05-20 22:18:39 [INFO] Found 13 articles from newspointnigeria.
+2026-05-20 22:18:41 [INFO] Crawling firstnewsonline...
+2026-05-20 22:18:42 [ERROR] Error fetching http://www.firstnewsonline.ng/: HTTPConnectionPool(host='www.firstnewsonline.ng', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.firstnewsonline.ng', port=80): Failed to resolve 'www.firstnewsonline.ng' ([Errno -3] Temporary failure in name resolution)"))
+2026-05-20 22:18:42 [INFO] Found 0 articles from firstnewsonline.
+2026-05-20 22:18:44 [INFO] Crawling naijaonlinenews...
+2026-05-20 22:18:48 [INFO] Found 7 articles from naijaonlinenews.
+2026-05-20 22:18:50 [INFO] Crawling prtimesafrica...
+2026-05-20 22:18:51 [ERROR] Error fetching https://prtimesafrica.com.ng/: HTTPSConnectionPool(host='prtimesafrica.com.ng', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='prtimesafrica.com.ng', port=443): Failed to resolve 'prtimesafrica.com.ng' ([Errno -3] Temporary failure in name resolution)"))
+2026-05-20 22:18:51 [INFO] Found 0 articles from prtimesafrica.
+2026-05-20 22:18:53 [INFO] Crawling opinow...
+2026-05-20 22:18:56 [INFO] Found 0 articles from opinow.
+2026-05-20 22:18:58 [INFO] Crawling newsflashngr...
+2026-05-20 22:19:01 [INFO] Found 10 articles from newsflashngr.
+2026-05-20 22:19:03 [INFO] Crawling premiumtimesng...
+2026-05-20 22:19:05 [INFO] Found 14 articles from premiumtimesng.
+2026-05-20 22:19:07 [INFO] Crawling dailyintelnewspaper...
+2026-05-20 22:19:09 [INFO] Found 6 articles from dailyintelnewspaper.
+2026-05-20 22:19:11 [INFO] Crawling accessnews...
+2026-05-20 22:19:18 [INFO] Found 0 articles from accessnews.
+2026-05-20 22:19:20 [INFO] Crawling newscallmedia...
+2026-05-20 22:19:20 [INFO] Found 13 articles from newscallmedia.
+2026-05-20 22:19:22 [INFO] Crawling nextedition...
+2026-05-20 22:19:26 [INFO] Found 19 articles from nextedition.
+2026-05-20 22:19:28 [INFO] Crawling newnigeriatimes...
+2026-05-20 22:19:28 [ERROR] Error fetching http://www.newnigeriatimes.com/: HTTPConnectionPool(host='www.newnigeriatimes.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.newnigeriatimes.com', port=80): Failed to resolve 'www.newnigeriatimes.com' ([Errno -5] No address associated with hostname)"))
+2026-05-20 22:19:28 [INFO] Found 0 articles from newnigeriatimes.
+2026-05-20 22:19:30 [INFO] Crawling metrodailyng...
+2026-05-20 22:19:42 [INFO] Found 1 articles from metrodailyng.
+2026-05-20 22:19:44 [INFO] Crawling theeagleonline...
+2026-05-20 22:19:48 [INFO] Found 7 articles from theeagleonline.
+2026-05-20 22:19:50 [INFO] Crawling 21stcenturychronicle...
+2026-05-20 22:20:03 [ERROR] Error fetching https://21stcenturychronicle.com/: HTTPSConnectionPool(host='21stcenturychronicle.com', port=443): Read timed out. (read timeout=10)
+2026-05-20 22:20:03 [INFO] Found 0 articles from 21stcenturychronicle.
+2026-05-20 22:20:05 [INFO] Crawling dailybrief...
+2026-05-20 22:20:06 [ERROR] Error fetching https://www.dailybrief.ng/: HTTPSConnectionPool(host='www.dailybrief.ng', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.dailybrief.ng', port=443): Failed to resolve 'www.dailybrief.ng' ([Errno -2] Name or service not known)"))
+2026-05-20 22:20:06 [INFO] Found 0 articles from dailybrief.
+2026-05-20 22:20:08 [INFO] Crawling alutanews...
+2026-05-20 22:20:11 [WARNING] Failed to fetch https://www.alutanews.ng/: Status code 403
+2026-05-20 22:20:11 [INFO] Found 0 articles from alutanews.
+2026-05-20 22:20:13 [INFO] Crawling dalviewtv...
+2026-05-20 22:20:17 [INFO] Found 0 articles from dalviewtv.
+2026-05-20 22:20:19 [INFO] Crawling theprecisionng...
+2026-05-20 22:20:40 [INFO] Found 0 articles from theprecisionng.
+2026-05-20 22:20:42 [INFO] Crawling trustbasenews...
+2026-05-20 22:20:49 [INFO] Found 7 articles from trustbasenews.
+2026-05-20 22:20:51 [INFO] Crawling bluetoolz...
+2026-05-20 22:20:57 [INFO] Found 0 articles from bluetoolz.
+2026-05-20 22:20:59 [INFO] Crawling naijalivetv...
+2026-05-20 22:21:02 [INFO] Found 0 articles from naijalivetv.
+2026-05-20 22:21:04 [INFO] Crawling theabujainquirer...
+2026-05-20 22:21:07 [INFO] Found 0 articles from theabujainquirer.
+2026-05-20 22:21:09 [INFO] Crawling thenewafricamag...
+2026-05-20 22:21:12 [ERROR] Error fetching https://thenewafricamag.com/: HTTPSConnectionPool(host='thenewafricamag.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='thenewafricamag.com', port=443): Failed to resolve 'thenewafricamag.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-05-20 22:21:12 [INFO] Found 0 articles from thenewafricamag.
+2026-05-20 22:21:14 [INFO] Crawling thewhistler...
+2026-05-20 22:21:13 [INFO] Found 8 articles from thewhistler.
+2026-05-20 22:21:15 [INFO] Crawling exponentnews...
+2026-05-20 22:21:19 [INFO] Found 12 articles from exponentnews.
+2026-05-20 22:21:21 [INFO] Crawling radiomaria...
+2026-05-20 22:21:22 [WARNING] Failed to fetch https://radiomaria.ng/: Status code 403
+2026-05-20 22:21:22 [INFO] Found 0 articles from radiomaria.
+2026-05-20 22:21:24 [INFO] Crawling radionigeria...
+2026-05-20 22:21:29 [INFO] Found 9 articles from radionigeria.
+2026-05-20 22:21:31 [INFO] Crawling rbnradiotv...
+2026-05-20 22:21:34 [INFO] Found 0 articles from rbnradiotv.
+2026-05-20 22:21:36 [INFO] Crawling wazobiafm...
+2026-05-20 22:21:40 [INFO] Found 0 articles from wazobiafm.
+2026-05-20 22:21:42 [INFO] Crawling thebeat99ph...
+2026-05-20 22:21:42 [INFO] Found 0 articles from thebeat99ph.
+2026-05-20 22:21:44 [INFO] Crawling absradiotelevision...
+2026-05-20 22:21:45 [INFO] Found 0 articles from absradiotelevision.
+2026-05-20 22:21:47 [INFO] Crawling kissfm999...
+2026-05-20 22:21:50 [WARNING] Failed to fetch http://www.kissfm999.media/live: Status code 403
+2026-05-20 22:21:50 [INFO] Found 0 articles from kissfm999.
+2026-05-20 22:21:52 [INFO] Crawling prtvc...
+2026-05-20 22:21:53 [ERROR] Error fetching https://www.prtvc.net/: HTTPConnectionPool(host='arg.gegevensverificatie-be.org', port=80): Max retries exceeded with url: /-Verificatie (Caused by NameResolutionError("HTTPConnection(host='arg.gegevensverificatie-be.org', port=80): Failed to resolve 'arg.gegevensverificatie-be.org' ([Errno -2] Name or service not known)"))
+2026-05-20 22:21:53 [INFO] Found 0 articles from prtvc.
+2026-05-20 22:21:55 [INFO] Crawling ekofm...
+2026-05-20 22:22:06 [ERROR] Error fetching http://ekofm.lagosstate.gov.ng/: HTTPConnectionPool(host='ekofm.lagosstate.gov.ng', port=80): Read timed out. (read timeout=10)
+2026-05-20 22:22:06 [INFO] Found 0 articles from ekofm.
+2026-05-20 22:22:08 [INFO] Crawling nigeriainfo...
+2026-05-20 22:22:11 [INFO] Found 0 articles from nigeriainfo.
+2026-05-20 22:22:13 [INFO] Crawling wigradio...
+2026-05-20 22:22:20 [INFO] Found 0 articles from wigradio.
+2026-05-20 22:22:22 [INFO] Crawling radionigeriaibadan...
+2026-05-20 22:22:25 [WARNING] Failed to fetch http://www.radionigeriaibadan.gov.ng/: Status code 404
+2026-05-20 22:22:25 [INFO] Found 0 articles from radionigeriaibadan.
+2026-05-20 22:22:27 [INFO] Crawling dreamfm925...
+2026-05-20 22:22:29 [INFO] Found 0 articles from dreamfm925.
+2026-05-20 22:22:31 [INFO] Crawling superfm963...
+2026-05-20 22:22:34 [INFO] Found 0 articles from superfm963.
+2026-05-20 22:22:36 [INFO] Crawling visionafricaradioblog...
+2026-05-20 22:22:36 [ERROR] Error fetching http://visionafricaradioblog.com/: HTTPConnectionPool(host='visionafricaradioblog.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='visionafricaradioblog.com', port=80): Failed to resolve 'visionafricaradioblog.com' ([Errno -2] Name or service not known)"))
+2026-05-20 22:22:36 [INFO] Found 0 articles from visionafricaradioblog.
+2026-05-20 22:22:38 [INFO] Crawling agidigbo887fm...
+2026-05-20 22:22:42 [INFO] Found 0 articles from agidigbo887fm.
+2026-05-20 22:22:44 [INFO] Crawling osbcng...
+2026-05-20 22:22:47 [INFO] Found 0 articles from osbcng.
+2026-05-20 22:22:49 [INFO] Crawling diamondfm...
+2026-05-20 22:22:57 [INFO] Found 0 articles from diamondfm.
+2026-05-20 22:22:59 [INFO] Crawling hodradio...
+2026-05-20 22:23:01 [INFO] Found 0 articles from hodradio.
+2026-05-20 22:23:03 [INFO] Crawling comfort951fm...
+2026-05-20 22:23:13 [ERROR] Error fetching http://comfort951fm.com/: HTTPSConnectionPool(host='comfort951fm.com', port=443): Read timed out. (read timeout=10)
+2026-05-20 22:23:13 [INFO] Found 0 articles from comfort951fm.
+2026-05-20 22:23:15 [INFO] Crawling rosacomms...
+2026-05-20 22:23:17 [INFO] Found 0 articles from rosacomms.
+2026-05-20 22:23:19 [INFO] Crawling bossfm...
+2026-05-20 22:23:24 [INFO] Found 0 articles from bossfm.
+2026-05-20 22:23:26 [INFO] Crawling prnigeria...
+2026-05-20 22:23:28 [INFO] Found 0 articles from prnigeria.
+2026-05-20 22:23:30 [INFO] Crawling gazettengr...
+2026-05-20 22:23:31 [INFO] Found 0 articles from gazettengr.
+2026-05-20 22:23:33 [INFO] Crawling northeaststarlive...
+2026-05-20 22:23:37 [INFO] Found 0 articles from northeaststarlive.
+2026-05-20 22:23:39 [INFO] Crawling thegazette...
+2026-05-20 22:23:40 [WARNING] Failed to fetch http://thegazette.com.ng/: Status code 404
+2026-05-20 22:23:40 [INFO] Found 0 articles from thegazette.
+2026-05-20 22:23:42 [INFO] Crawling blueprintafric...
+2026-05-20 22:23:53 [ERROR] Error fetching http://www.blueprintafric.com/: HTTPConnectionPool(host='www.blueprintafric.com', port=80): Read timed out. (read timeout=10)
+2026-05-20 22:23:53 [INFO] Found 0 articles from blueprintafric.
+2026-05-20 22:23:55 [INFO] Crawling authorityngr...
+2026-05-20 22:23:58 [INFO] Found 7 articles from authorityngr.
+2026-05-20 22:24:00 [INFO] Crawling plateaustate...
+2026-05-20 22:24:02 [INFO] Found 0 articles from plateaustate.
+2026-05-20 22:24:04 [INFO] Crawling bbc...
+2026-05-20 22:24:05 [INFO] Found 0 articles from bbc.
+2026-05-20 22:24:06 [INFO] Crawling reuters...
+2026-05-20 22:24:06 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-20 22:24:06 [INFO] Found 0 articles from reuters.
+2026-05-20 22:24:08 [INFO] --- Scraped Headlines ---
+2026-05-20 22:24:08 [INFO] 1. [NTA] BREAKING: FG Explains Why Top Ministers Are Resigning
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://www.nta.ng/news/featured/breaking-fg-explains-why-top-ministers-are-resigning
+2026-05-20 22:24:08 [INFO] 2. [NEWSCENTRAL] WHO Worried About ‘Scale, Speed’ of Ebola
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/category/african-news/
+2026-05-20 22:24:08 [INFO] 3. [NEWSCENTRAL] WHO Worried About ‘Scale, Speed’ of Ebola
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/who-worried-about-scale-speed-of-ebola/
+2026-05-20 22:24:08 [INFO] 4. [NEWSCENTRAL] Benin Residents Embrace Herbal Medicine
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/benin-residents-embrace-herbal-medicine/
+2026-05-20 22:24:08 [INFO] 5. [NEWSCENTRAL] The World’s Deadliest Animal: Kill It or Protect It?
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/the-worlds-deadliest-animal-kill-it-or-protect-it/
+2026-05-20 22:24:08 [INFO] 6. [NEWSCENTRAL] Shakira Wins £50 Million Tax Refund from Spanish Government
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/category/entertainment/
+2026-05-20 22:24:08 [INFO] 7. [NEWSCENTRAL] Shakira Wins £50 Million Tax Refund from Spanish Government
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/shakira-wins-50-million-tax-refund-from-spanish-government/
+2026-05-20 22:24:08 [INFO] 8. [NEWSCENTRAL] Rand Slips on Conflict Sentiment
+2026-05-20 22:24:08 [INFO]    Keywords : conflict
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/rand-slips-on-conflict-sentiment/
+2026-05-20 22:24:08 [INFO] 9. [NEWSCENTRAL] Burkina Faso Tightens Security After Mali Attacks
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://newscentraltv.com/category/mali/
+2026-05-20 22:24:08 [INFO] 10. [CHANNELSTV] 2027 Election: NDC Screens, Clears Obi For Presidential Primary
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/20/2027-ndc-screens-clears-obi-for-presidential-primary/
+2026-05-20 22:24:08 [INFO] 11. [CHANNELSTV] Ex-Gov Lalong, Former Reps Deputy Speaker, Others Win APC NASS Primaries In Plateau
+2026-05-20 22:24:08 [INFO]    Keywords : Plateau
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/20/ex-gov-lalong-former-reps-deputy-speaker-others-win-apc-nass-primaries-in-plateau/
+2026-05-20 22:24:08 [INFO] 12. [CHANNELSTV] Security Operatives Bust Kidnappers’ Hideouts In Edo, Arrest 12 Suspects
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/19/security-operatives-bust-kidnappers-hideouts-in-edo-arrest-12-suspects/
+2026-05-20 22:24:08 [INFO] 13. [CHANNELSTV] Kaduna Assembly Speaker, Deputy, Majority Leader Secure APC Tickets Through Consensus
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/20/kaduna-assembly-speaker-deputy-majority-leader-secure-apc-tickets-through-consensus/
+2026-05-20 22:24:08 [INFO] 14. [CHANNELSTV] Taraba APC Governorship Aspirant David Kente Steps Aside From Race
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/20/taraba-apc-governorship-aspirant-david-kente-withdraws-from-race/
+2026-05-20 22:24:08 [INFO] 15. [CHANNELSTV] Gombe Group Rejects APC Primary, Urges Calm Among Youths
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 16. [CHANNELSTV] US To Screen For Ebola At Airports
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/18/us-to-screen-for-ebola-at-airports/
+2026-05-20 22:24:08 [INFO] 17. [CHANNELSTV] ‘Political Conmen’, Kenneth Okonkwo Fires At Obi, Kwankwaso Over ADC Exit | Politics Today
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : javascript:void(0)
+2026-05-20 22:24:08 [INFO] 18. [CHANNELSTV] Wike Not Only Destabilizing Rivers State, But Also Politics Of Nigeria
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 19. [CHANNELSTV] Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + More|Politics Today
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 20. [CHANNELSTV] Politics Today
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 21. [CHANNELSTV] Oyo School Abduction, Surulere LSHA Election Struggle, Desmond Speaks On Ordeal |Sunrise Daily
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 22. [CHANNELSTV] Primaries: Why Parties Must Consider Open-Secret Ballot System - Ken Okolugbo | Lunchtime Politics
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 23. [CHANNELSTV] ‘Such Dirty Politics’, Stakeholders Share Views On APC Primaries Outcome | Lunchtime Politics
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 24. [CHANNELSTV] Performance Or Zoning: Issues Around Equity Trail Kwara APC Primaries + More | Lunchtime Politics
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 25. [CHANNELSTV] ‘You Can Gather In The Name Of Election But There’s Only One PDP’, Turnah Reviews Internal Issues
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 26. [CHANNELSTV] 2027: Lawyer, Ex-GSHA Minority leader Discuss Legalese Of Consensus Candidacy | Lunchtime Politics
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 27. [CHANNELSTV] Head Of Service Of The Federation Speaks On Reforms, Accountability + More | Politics Today
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 28. [CHANNELSTV] 2027: Not Picking Southern Candidate Will Make ADC Lose Election – Tanko
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : #
+2026-05-20 22:24:08 [INFO] 29. [CHANNELSTV] Blaqbonez Gives Reasons Why He Has Never Voted In An Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : Blaqbonez Gives Reasons Why He Has Never Voted In An Election
+2026-05-20 22:24:08 [INFO] 30. [CHANNELSTV] Beyond The Uterus: Why The PCOS Name Change Is A Major Win For Women
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/14/beyond-the-uterus-why-the-pcos-name-change-is-a-major-win-for-women/
+2026-05-20 22:24:08 [INFO] 31. [CHANNELSTV] Again, Fubara Approves Promotion Of Rivers Civil Servants
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/18/again-fubara-approves-promotion-of-rivers-civil-servants/
+2026-05-20 22:24:08 [INFO] 32. [CHANNELSTV] Senate Condemns Students’ Abduction In Borno, Oyo, Promises State Police
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/17/senate-condemns-students-abduction-in-borno-oyo-promises-state-police-soon/
+2026-05-20 22:24:08 [INFO] 33. [CHANNELSTV] Germany To Treat US Ebola Patient From DR Congo
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.channelstv.com/2026/05/19/germany-to-treat-us-ebola-patient-from-dr-congo/
+2026-05-20 22:24:08 [INFO] 34. [THENIGERIAN] Farotimi Alleges Buhari, Tinubu Governments Enabled Fulani Terrorism
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/farotimi-alleges-buhari-tinubu-governments-enabled-fulani-terrorism/
+2026-05-20 22:24:08 [INFO] 35. [THENIGERIAN] Stakeholders Endorse Presidential Framework For NSIB
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/stakeholders-endorse-presidential-framework-for-nsib/
+2026-05-20 22:24:08 [INFO] 36. [THENIGERIAN] Responsible Reporting Denies Terrorists Oxygen — CDS
+2026-05-20 22:24:08 [INFO]    Keywords : conflict
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/responsible-reporting-denies-terrorists-oxygen-cds/
+2026-05-20 22:24:08 [INFO] 37. [THENIGERIAN] INEC Fixes June 20 For Kano Federal Constituency Bye-Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/inec-fixes-june-20-for-kano-federal-constituency-bye-election/
+2026-05-20 22:24:08 [INFO] 38. [THENIGERIAN] Farotimi Alleges Buhari, Tinubu Governments Enabled Fulani…
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/category/news/
+2026-05-20 22:24:08 [INFO] 39. [THENIGERIAN] INEC Fixes June 20 For Kano Federal Constituency Bye-Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/inec-fixes-june-20-for-kano-federal-constituency-bye-election/
+2026-05-20 22:24:08 [INFO] 40. [THENIGERIAN] Kano Government Accuses Kwankwaso Of Indirectly Supporting Tinubu’s…
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/kano-government-accuses-kwankwaso-of-indirectly-supporting-tinubus-2027-bid/
+2026-05-20 22:24:08 [INFO] 41. [THENIGERIAN] Farotimi Alleges Buhari, Tinubu Governments Enabled Fulani…
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/farotimi-alleges-buhari-tinubu-governments-enabled-fulani-terrorism/
+2026-05-20 22:24:08 [INFO] 42. [THENIGERIAN] Kano Government Accuses Kwankwaso Of Indirectly Supporting…
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/kano-government-accuses-kwankwaso-of-indirectly-supporting-tinubus-2027-bid/
+2026-05-20 22:24:08 [INFO] 43. [THENIGERIAN] Farotimi Alleges Buhari, Tinubu Governments Enabled Fulani Terrorism
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/farotimi-alleges-buhari-tinubu-governments-enabled-fulani-terrorism/
+2026-05-20 22:24:08 [INFO] 44. [THENIGERIAN] Farotimi Alleges Buhari, Tinubu Governments Enabled Fulani Terrorism
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/farotimi-alleges-buhari-tinubu-governments-enabled-fulani-terrorism/
+2026-05-20 22:24:08 [INFO] 45. [THENIGERIAN] Stakeholders Endorse Presidential Framework For NSIB
+2026-05-20 22:24:08 [INFO]    Keywords : government, security
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/stakeholders-endorse-presidential-framework-for-nsib/
+2026-05-20 22:24:08 [INFO] 46. [THENIGERIAN] Responsible Reporting Denies Terrorists Oxygen — CDS
+2026-05-20 22:24:08 [INFO]    Keywords : conflict
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/responsible-reporting-denies-terrorists-oxygen-cds/
+2026-05-20 22:24:08 [INFO] 47. [THENIGERIAN] INEC Fixes June 20 For Kano Federal Constituency Bye-Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/inec-fixes-june-20-for-kano-federal-constituency-bye-election/
+2026-05-20 22:24:08 [INFO] 48. [THENIGERIAN] Kano Government Accuses Kwankwaso Of Indirectly Supporting Tinubu’s 2027 Bid
+2026-05-20 22:24:08 [INFO]    Keywords : election, government
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/kano-government-accuses-kwankwaso-of-indirectly-supporting-tinubus-2027-bid/
+2026-05-20 22:24:08 [INFO] 49. [THENIGERIAN] Desmond Elliot Withdraws From Lagos APC House Of Assembly Primary Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/desmond-elliot-withdraws-from-lagos-apc-house-of-assembly-primary-election/
+2026-05-20 22:24:08 [INFO] 50. [THENIGERIAN] Peter Obi Opens Up On What Happened During NDC Presidential Screening
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://thenigerian.news/2026/05/20/peter-obi-opens-up-on-what-happened-during-ndc-presidential-screening/
+2026-05-20 22:24:08 [INFO] 51. [NATURENEWS] Mozambique launches $4.6bn water security plan to boost…
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://naturenews.africa/mozambique-launches-4-6bn-water-security-plan-to-boost-access-by-2036/
+2026-05-20 22:24:08 [INFO] 52. [NATURENEWS] Vacancy for the Post of Managing Director/Chief Executive Officer
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://naturenews.africa/category/economy/
+2026-05-20 22:24:08 [INFO] 53. [NATURENEWS] Chinese investors move to takeover Katsina economy with…
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://naturenews.africa/chinese-investors-move-to-takeover-katsina-economy-with-720m-projects/
+2026-05-20 22:24:08 [INFO] 54. [NATURENEWS] Lagos to commission food logistics hub
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://naturenews.africa/category/agriculture/
+2026-05-20 22:24:08 [INFO] 55. [NATURENEWS] Climate shocks disrupt education for millions in Africa â…
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://naturenews.africa/category/climate-change/
+2026-05-20 22:24:08 [INFO] 56. [TVCNEWS] Zamfara Government Treats 6842 In 17 Phases Of Medical Outreach
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/zamfara-government-treats-6842-in-17-phases-of-medical-outreach/
+2026-05-20 22:24:08 [INFO] 57. [TVCNEWS] Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal's Re-election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/matawalle-meets-aggrieved-assembly-aspirants-backs-tinubu-lawals-re-election/
+2026-05-20 22:24:08 [INFO] 58. [TVCNEWS] Makinde Signs Executive Order Regulating Vigilante, Security Groups In Oyo
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/makinde-signs-executive-order-regulating-vigilante-security-groups-in-oyo/
+2026-05-20 22:24:08 [INFO] 59. [TVCNEWS] Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal’s Re-election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/matawalle-meets-aggrieved-assembly-aspirants-backs-tinubu-lawals-re-election/
+2026-05-20 22:24:08 [INFO] 60. [TVCNEWS] Oyo State Government, Security Agencies Clear Ibadan Streets of Destitutes, Beggars
+2026-05-20 22:24:08 [INFO]    Keywords : government, security
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/oyo-state-government-security-agencies-clear-ibadan-streets-of-destitutes-beggars/
+2026-05-20 22:24:08 [INFO] 61. [TVCNEWS] Tech Firm Calls For Cyber security Resilience At Cyber security Awards
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/tech-firm-calls-for-cyber-security-resilience-at-cyber-security-awards/
+2026-05-20 22:24:08 [INFO] 62. [TVCNEWS] FULL VIDEO: INEC Chairman Speaks On 2027 Elections, Electronic Transmission Of Results
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : #top-video
+2026-05-20 22:24:08 [INFO] 63. [TVCNEWS] Zamfara Government Treats 6842 In 17 Phases Of Medical Outreach
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/zamfara-government-treats-6842-in-17-phases-of-medical-outreach/
+2026-05-20 22:24:08 [INFO] 64. [TVCNEWS] WHO Declares Ebola Outbreak In DRC, Uganda Global Health Emergency
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.tvcnews.tv/who-declares-ebola-outbreak-in-drc-uganda-global-health-emergency/
+2026-05-20 22:24:08 [INFO] 65. [CHANNELNETWORKAFRIQUE] Alausa, Duke Of Edinburgh Discuss Non-Formal Education For Job Creation, Youth Empowerment
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://channelnetworkafrique.com/alausa-duke-of-edinburgh-discuss-non-formal-education-for-job-creation-youth-empowerment/
+2026-05-20 22:24:08 [INFO] 66. [CHANNELNETWORKAFRIQUE] Alausa Highlights Tinubu Administration’s Education Reforms At Global…
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://channelnetworkafrique.com/alausa-highlights-tinubu-administrations-education-reforms-at-global-forum/
+2026-05-20 22:24:08 [INFO] 67. [CHANNELNETWORKAFRIQUE] Abure Led LP To Issue Free Forms, Insists On Full Participation In 2027 Elections
+2026-05-20 22:24:08 [INFO]    Keywords : election, politics
+2026-05-20 22:24:08 [INFO]    Link     : https://channelnetworkafrique.com/category/politics/
+2026-05-20 22:24:08 [INFO] 68. [CHANNELNETWORKAFRIQUE] Sugar Sector Capable of Creating 1 Million Jobs, Curbing Insecurity – NSDC​
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://channelnetworkafrique.com/category/news/
+2026-05-20 22:24:08 [INFO] 69. [CHANNELNETWORKAFRIQUE] Group Hails FG’s $500m Annual Research Fund, Says Initiative Will Drive Industrial Growth
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://channelnetworkafrique.com/category/news/
+2026-05-20 22:24:08 [INFO] 70. [LAGOSTELEVISION] FCT launches free healthcare insurance scheme for Kuje inmates
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2026/05/20/fct-launches-free-healthcare-insurance-scheme-for-kuje-inmates/
+2026-05-20 22:24:08 [INFO] 71. [LAGOSTELEVISION] Fubara Withdraws From Rivers APC Governorship Primary
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2026/05/20/fubara-withdraws-from-rivers-apc-governorship-primary/
+2026-05-20 22:24:08 [INFO] 72. [LAGOSTELEVISION] Desmond Elliot withdraws from Lagos APC primary, alleges intimidation
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2026/05/20/desmond-elliot-withdraws-from-lagos-apc-primary-alleges-intimidation/
+2026-05-20 22:24:08 [INFO] 73. [LAGOSTELEVISION] FG begins payment of BEA scholars’ 2025 allowances
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2026/05/20/fg-begins-payment-of-bea-scholars-2025-allowances/
+2026-05-20 22:24:08 [INFO] 74. [LAGOSTELEVISION] WHO says Ebola risk high in Central Africa, low globally
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2026/05/20/who-says-ebola-risk-high-in-central-africa-low-globally/
+2026-05-20 22:24:08 [INFO] 75. [LAGOSTELEVISION] FG begins payment of BEA scholars’ 2025 allowances
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2026/05/20/fg-begins-payment-of-bea-scholars-2025-allowances/
+2026-05-20 22:24:08 [INFO] 76. [LAGOSTELEVISION] Nigeria strongly condemns attempted coup in Benin, reaffirms zero tolerance for unconstitutional change of government
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://lagostelevision.com/2025/12/07/nigeria-strongly-condemns-attempted-coup-in-benin-reaffirms-zero-tolerance-for-unconstitutional-change-of-government/
+2026-05-20 22:24:08 [INFO] 77. [NATIONALECONOMY] FG’S TECH REFORMS MAKING SIGNIFICANT IMPACT ON ECONOMY – SHETTIMA
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://nationaleconomy.com/fgs-tech-reforms-making-significant-impact-on-economy-shettima/
+2026-05-20 22:24:08 [INFO] 78. [NATIONALECONOMY] Anambra Election: INEC Accredits 76 Media Organisations, 508 Personnel
+2026-05-20 22:24:08 [INFO]    Keywords : election, politics
+2026-05-20 22:24:08 [INFO]    Link     : https://nationaleconomy.com/anambra-election-inec-accredits-76-media-organisations-508-personnel/
+2026-05-20 22:24:08 [INFO] 79. [LEADERSHIP] ‎Government Should Move Beyond Condolence Speeches – Kehinde Bankole Speaks On Rising Insecurity
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://leadership.ng/government-should-move-beyond-condolence-speeches-kehinde-bankole-speaks-on-rising-insecurity/
+2026-05-20 22:24:08 [INFO] 80. [LEADERSHIP] Murder in Dublin: Congolese Man Killed By Security Men over allegations of Shoplifting
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://leadership.ng/murder-in-dublin-congolese-man-killed-by-security-men-over-allegations-of-shoplifting/
+2026-05-20 22:24:08 [INFO] 81. [LEADERSHIP] Votes Will Count, Says INEC Chairman Amupitan Ahead of Ekiti Governorship Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://leadership.ng/votes-will-count-says-inec-chairman-amupitan-ahead-of-ekiti-governorship-election/
+2026-05-20 22:24:08 [INFO] 82. [LEADERSHIP] Pin Up official: Account Registration And Security Features
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://leadership.ng/pin-up-official-account-registration-and-security-features/
+2026-05-20 22:24:08 [INFO] 83. [LEADERSHIP] Accelerate Security Reforms, Secure Communities Ahead Of 2027 Elections – Security Expert
+2026-05-20 22:24:08 [INFO]    Keywords : election, security
+2026-05-20 22:24:08 [INFO]    Link     : https://leadership.ng/accelerate-security-reforms-secure-communities-ahead-of-2027-elections-security-expert/
+2026-05-20 22:24:08 [INFO] 84. [LEADERSHIP] Kaduna’s Skills Revolution: A Bold Investment In Youth, Productivity And Security
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://leadership.ng/kadunas-skills-revolution-a-bold-investment-in-youth-productivity-and-security/
+2026-05-20 22:24:08 [INFO] 85. [OURNIGERIANEWS] FAAN Engages Traditional Rulers to Strengthen Security…
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/category/general-news/
+2026-05-20 22:24:08 [INFO] 86. [OURNIGERIANEWS] FG Reaffirms Commitment to Non-Formal Education, Youth…
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/category/education/
+2026-05-20 22:24:08 [INFO] 87. [OURNIGERIANEWS] FAAN Engages Traditional Rulers to Strengthen Security Around Lagos Airport
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/category/general-news/
+2026-05-20 22:24:08 [INFO] 88. [OURNIGERIANEWS] Radda’s Relentless Efforts On Security: Dialogue,…
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/category/column/
+2026-05-20 22:24:08 [INFO] 89. [OURNIGERIANEWS] Shehu Buba Pulls Out of Bauchi APC Governorship Primary, Cites Irregularities
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/shehu-buba-pulls-out-of-bauchi-apc-governorship-primary-cites-irregularities/
+2026-05-20 22:24:08 [INFO] 90. [OURNIGERIANEWS] Wunti Seeks Transparent APC Governorship Primary in Bauchi
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/wunti-seeks-transparent-apc-governorship-primary-in-bauchi/
+2026-05-20 22:24:08 [INFO] 91. [OURNIGERIANEWS] APC Primaries: A Party at War With Its Own Democratic Promise
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/apc-primaries-a-party-at-war-with-its-own-democratic-promise/
+2026-05-20 22:24:08 [INFO] 92. [OURNIGERIANEWS] Senator Lalong Emerges APC Candidate For Plateau South Senatorial…
+2026-05-20 22:24:08 [INFO]    Keywords : politics, Plateau
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/senator-lalong-emerges-apc-candidate-for-plateau-south-senatorial-district/
+2026-05-20 22:24:08 [INFO] 93. [OURNIGERIANEWS] Pantami Withdraws from Gombe APC Governorship Race, Cites Electoral…
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/pantami-withdraws-from-gombe-apc-governorship-race-cites-electoral-violations/
+2026-05-20 22:24:08 [INFO] 94. [OURNIGERIANEWS] APC Aspirant Seeks Probe Into Bauchi South Senatorial Exercise
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/apc-aspirant-seeks-probe-into-bauchi-south-senatorial-exercise/
+2026-05-20 22:24:08 [INFO] 95. [OURNIGERIANEWS] APC Primaries: Suswam, Aber Unseat Incumbent Benue Senators
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/apc-primaries-suswam-aber-unseat-incumbent-benue-senators/
+2026-05-20 22:24:08 [INFO] 96. [OURNIGERIANEWS] Governor Adeleke directs immediate revitalization of Safe School…
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/governor-adeleke-directs-immediate-revitalization-of-safe-school-initiative/
+2026-05-20 22:24:08 [INFO] 97. [OURNIGERIANEWS] Radda’s Relentless Efforts On Security: Dialogue, Deterrence And Search for Stability
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://ournigerianews.com/raddas-relentless-efforts-on-security-dialogue-deterrence-and-search-for-stability/
+2026-05-20 22:24:08 [INFO] 98. [FRONTLINENEWS] NFVCB Receives  WHO Director-General Special Award For Leadership In Tobacco Control in Entertainment Media
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://frontlinenews.com.ng/nfvcb-receives-who-director-general-special-award-for-leadership-in-tobacco-control-in-entertainment-media/
+2026-05-20 22:24:08 [INFO] 99. [FRONTLINENEWS] NFVCB Receives  WHO Director-General Special Award For Leadership In Tobacco Control in Entertainment Media
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://frontlinenews.com.ng/nfvcb-receives-who-director-general-special-award-for-leadership-in-tobacco-control-in-entertainment-media/
+2026-05-20 22:24:08 [INFO] 100. [FRONTLINENEWS] Epe Reps Aspirant, Bakare Adeyinka, Rejects APC Primary Result
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://frontlinenews.com.ng/epe-reps-aspirant-bakare-adeyinka-rejects-apc-primary-result/
+2026-05-20 22:24:08 [INFO] 101. [MEDIABYPASSNEWS] 2027: Peter Obi cleared for NDC Presidential run after rigorous screening
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/2027-peter-obi-cleared-for-ndc-presidential-run-after-rigorous-screening/
+2026-05-20 22:24:08 [INFO] 102. [MEDIABYPASSNEWS] Peter Obi departs ADC, complains toxic in Nigerian Politics
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/peter-obi-departs-adc-complains-toxic-in-nigerian-politics/
+2026-05-20 22:24:08 [INFO] 103. [MEDIABYPASSNEWS] FUNATO appointments spark outcry: MURIC demands transparency, inclusivity
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/funato-appointments-spark-outcry-muric-demands-transparency-inclusivity/
+2026-05-20 22:24:08 [INFO] 104. [MEDIABYPASSNEWS] Saudi fund scholarships to 50 Nigerian students, FG hails
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/saudi-fund-scholarships-to-50-nigerian-students-fg-hails/
+2026-05-20 22:24:08 [INFO] 105. [MEDIABYPASSNEWS] First Lady champions traditional books over tech for Child education
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/first-lady-champions-traditional-books-over-tech-for-child-education/
+2026-05-20 22:24:08 [INFO] 106. [MEDIABYPASSNEWS] 2027: Peter Obi cleared for NDC Presidential run after rigorous screening
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/2027-peter-obi-cleared-for-ndc-presidential-run-after-rigorous-screening/
+2026-05-20 22:24:08 [INFO] 107. [MEDIABYPASSNEWS] WHO sounds alarm on Ebola, Hantavirus outbreak at WHA79
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/who-sounds-alarm-on-ebola-hantavirus-outbreak-at-wha79/
+2026-05-20 22:24:08 [INFO] 108. [MEDIABYPASSNEWS] Global health agencies mobilize as rare hantavirus emerges
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/global-health-agencies-mobilize-as-rare-hantavirus-emerges/
+2026-05-20 22:24:08 [INFO] 109. [MEDIABYPASSNEWS] FG reiterates unwavering support for media, hails RATTAWU’s golden jubilee
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/fg-reiterates-unwavering-support-for-media-hails-rattawus-golden-jubilee/
+2026-05-20 22:24:08 [INFO] 110. [MEDIABYPASSNEWS] 2027: Peter Obi cleared for NDC Presidential run after rigorous screening
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/2027-peter-obi-cleared-for-ndc-presidential-run-after-rigorous-screening/
+2026-05-20 22:24:08 [INFO] 111. [MEDIABYPASSNEWS] 2027: Peter Obi cleared for NDC Presidential run after rigorous screening
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/2027-peter-obi-cleared-for-ndc-presidential-run-after-rigorous-screening/
+2026-05-20 22:24:08 [INFO] 112. [MEDIABYPASSNEWS] WHO sounds alarm on Ebola, Hantavirus outbreak at WHA79
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://mediabypassnews.com/who-sounds-alarm-on-ebola-hantavirus-outbreak-at-wha79/
+2026-05-20 22:24:08 [INFO] 113. [NEWSPOINTNIGERIA] 2027: Who Will Give Nigeria The Economy It Deserves? (2) – By Yemi Kolapo
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/2027-who-will-give-nigeria-the-economy-it-deserves-2-by-yemi-kolapo/
+2026-05-20 22:24:08 [INFO] 114. [NEWSPOINTNIGERIA] JUST IN: Rivers Crisis Deepens As Fubara Withdraws From APC Governorship Primary
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/just-in-rivers-crisis-deepens-as-fubara-withdraws-from-apc-governorship-primary/
+2026-05-20 22:24:08 [INFO] 115. [NEWSPOINTNIGERIA] Jigawa Disburses Over N3.6bn To Retirees, Families Of Deceased Workers
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/jigawa-disburses-over-n3-6bn-to-retirees-families-of-deceased-workers/
+2026-05-20 22:24:08 [INFO] 116. [NEWSPOINTNIGERIA] Tuggar Vs Pate: Two Ministers, One Seat, And A Defining Political Test For Bauchi 2027
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/tuggar-vs-pate-two-ministers-one-seat-and-a-defining-political-test-for-bauchi-2027/
+2026-05-20 22:24:08 [INFO] 117. [NEWSPOINTNIGERIA] ADC Leadership Crisis Deepens As Bala Writes INEC To Sack David Mark, Aregbesola
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/adc-leadership-crisis-deepens-as-bala-writes-inec-to-sack-david-mark-aregbesola/
+2026-05-20 22:24:08 [INFO] 118. [NEWSPOINTNIGERIA] What Peter Obi May Lose If He Joins Coalition As VP Candidate
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/what-peter-obi-may-lose-if-he-joins-coalition-as-vp-candidate/
+2026-05-20 22:24:08 [INFO] 119. [NEWSPOINTNIGERIA] Atiku Moves To Unseat Wike’s Damagum As PDP Chairman, Backs Suswam As Replacement
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/atiku-moves-to-unseat-wikes-damagum-as-pdp-chairman-backs-suswam-as-replacement/
+2026-05-20 22:24:08 [INFO] 120. [NEWSPOINTNIGERIA] Edo’s Senator Matthew Uroghide, Others Defect To APC
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/edos-senator-matthew-uroghide-others-defect-to-apc/
+2026-05-20 22:24:08 [INFO] 121. [NEWSPOINTNIGERIA] Finally, Wike Opens Up On Rift With Peter Odili
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/finally-wike-opens-up-on-rift-with-peter-odili/
+2026-05-20 22:24:08 [INFO] 122. [NEWSPOINTNIGERIA] El-Rufa’i’s  Debt Burden: APC Suspends Women Leader For Criticising Kaduna Gov
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/el-rufais-debt-burden-apc-suspends-women-leader-for-criticising-kaduna-gov/
+2026-05-20 22:24:08 [INFO] 123. [NEWSPOINTNIGERIA] JUST IN: Rivers Crisis Deepens As Fubara Withdraws From APC Governorship Primary
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/just-in-rivers-crisis-deepens-as-fubara-withdraws-from-apc-governorship-primary/
+2026-05-20 22:24:08 [INFO] 124. [NEWSPOINTNIGERIA] Seven Key Issues Resolved By Seven Supreme Court Judges
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/seven-key-issues-resolved-by-seven-supreme-court-judges/
+2026-05-20 22:24:08 [INFO] 125. [NEWSPOINTNIGERIA] Tribunal Criticises Labour Party For Lack Of Preparation, Adjourns Hearing
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://newspointnigeria.com/tribunal-criticises-labour-party-for-lack-of-preparation-adjourns-hearing/
+2026-05-20 22:24:08 [INFO] 126. [NAIJAONLINENEWS] Customs Launches Smart Declaration Platform to End Airport Delays
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 127. [NAIJAONLINENEWS] NIMASA, HYDROGRAPHIC AGENCY EXPLORES LOCAL HYDROGRAPHIC SOLUTIONS
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 128. [NAIJAONLINENEWS] CUSTOMS, NSCDC, CORRECTIONAL SERVICE FORGE STRONGER SECURITY SYNERGY IN OYO STATE
+2026-05-20 22:24:08 [INFO]    Keywords : government, security
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 129. [NAIJAONLINENEWS] President Tinubu Charts Africa’s Blue Economy Future, Says Piracy Eliminated in Nigerian Waters
+2026-05-20 22:24:08 [INFO]    Keywords : economy, security
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 130. [NAIJAONLINENEWS] Oyetola Showcases Nigeria’s Blue Economy Agenda at Africa Forward Summit
+2026-05-20 22:24:08 [INFO]    Keywords : government, economy
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 131. [NAIJAONLINENEWS] NCS Reinforces Anti-Money Laundering Compliance Through Sensitisation Programme
+2026-05-20 22:24:08 [INFO]    Keywords : security, conflict
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 132. [NAIJAONLINENEWS] WISTA Nigeria: Ani Secures Second Term, Sets Agenda for Women’s Visibility, Capacity Building, Impact
+2026-05-20 22:24:08 [INFO]    Keywords : election, economy, education
+2026-05-20 22:24:08 [INFO]    Link     : None
+2026-05-20 22:24:08 [INFO] 133. [NEWSFLASHNGR] Goodluck Jonathan 2027 Return to Nigeria Politics Stir…
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/goodluck-jonathan-2027-return-to-nigeria/
+2026-05-20 22:24:08 [INFO] 134. [NEWSFLASHNGR] Abacha Era Economy Nigeria of 90s: Kalu Aja Sparks…
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/abacha-era-economy-nigeria-kalu-aja-sparks/
+2026-05-20 22:24:08 [INFO] 135. [NEWSFLASHNGR] Goodluck Jonathan 2027 Return to Nigeria Politics Stir Debate Among Citizens (Must Read)
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/goodluck-jonathan-2027-return-to-nigeria/
+2026-05-20 22:24:08 [INFO] 136. [NEWSFLASHNGR] Abacha Era Economy Nigeria of 90s: Kalu Aja Sparks Debate With Controversial Claim
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/abacha-era-economy-nigeria-kalu-aja-sparks/
+2026-05-20 22:24:08 [INFO] 137. [NEWSFLASHNGR] Goodluck Jonathan 2027 Return to Nigeria Politics Stir…
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/goodluck-jonathan-2027-return-to-nigeria/
+2026-05-20 22:24:08 [INFO] 138. [NEWSFLASHNGR] Abacha Era Economy Nigeria of 90s: Kalu Aja Sparks…
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/abacha-era-economy-nigeria-kalu-aja-sparks/
+2026-05-20 22:24:08 [INFO] 139. [NEWSFLASHNGR] Goodluck Jonathan 2027 Return to Nigeria Politics Stir Debate Among Citizens (Must Read)
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/goodluck-jonathan-2027-return-to-nigeria/
+2026-05-20 22:24:08 [INFO] 140. [NEWSFLASHNGR] Abacha Era Economy Nigeria of 90s: Kalu Aja Sparks…
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/abacha-era-economy-nigeria-kalu-aja-sparks/
+2026-05-20 22:24:08 [INFO] 141. [NEWSFLASHNGR] Goodluck Jonathan 2027 Return to Nigeria Politics Stir Debate Among Citizens (Must Read)
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/goodluck-jonathan-2027-return-to-nigeria/
+2026-05-20 22:24:08 [INFO] 142. [NEWSFLASHNGR] Abacha Era Economy Nigeria of 90s: Kalu Aja Sparks Debate With Controversial Claim
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://www.newsflashngr.com/abacha-era-economy-nigeria-kalu-aja-sparks/
+2026-05-20 22:24:08 [INFO] 143. [PREMIUMTIMESNG] Can NDC zoning presidency to South affect Tinubu’s re-election bid?
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/news/headlines/880732-can-ndc-zoning-presidency-to-south-affect-tinubus-re-election-bid.html
+2026-05-20 22:24:08 [INFO] 144. [PREMIUMTIMESNG] FAAN announces additional health screening measures, enhanced Ebola surveillance at Nigerian airports
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/business/business-news/881176-faan-announces-additional-health-screening-measures-enhanced-ebola-surveillance-at-nigerian-airports.html
+2026-05-20 22:24:08 [INFO] 145. [PREMIUMTIMESNG] Recycle or Cut Production: The Politics of Plastics Economy
+2026-05-20 22:24:08 [INFO]    Keywords : economy, politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/news/top-news/819633-recycle-or-cut-production-the-politics-of-plastics-economy.html
+2026-05-20 22:24:08 [INFO] 146. [PREMIUMTIMESNG] Flood Threat: NEMA launches response campaign in Rivers
+2026-05-20 22:24:08 [INFO]    Keywords : flood
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/regional/south-south-regional/881178-flood-threat-nema-launches-response-campaign-in-rivers.html
+2026-05-20 22:24:08 [INFO] 147. [PREMIUMTIMESNG] CSOs condemn Borno schoolchildren abduction, demand security overhaul
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/news/more-news/881139-csos-condemn-borno-schoolchildren-abduction-demand-security-overhaul.html
+2026-05-20 22:24:08 [INFO] 148. [PREMIUMTIMESNG] Three court-sacked Plateau PDP lawmakers resurface on APC tickets as primaries unsettle incumbents
+2026-05-20 22:24:08 [INFO]    Keywords : Plateau
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/regional/north-central/881345-three-court-sacked-plateau-pdp-lawmakers-resurface-on-apc-tickets-as-primaries-unsettle-incumbents.html
+2026-05-20 22:24:08 [INFO] 149. [PREMIUMTIMESNG] Atiku appears before ADC screening panel, promises robust security reforms
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/regional/north-central/881346-atiku-appears-before-adc-screening-panel-promises-robust-security-reforms.html
+2026-05-20 22:24:08 [INFO] 150. [PREMIUMTIMESNG] Kogi East APC leaders defend primary election result, ask incumbent senator to accept defeat
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/regional/north-central/881221-east-apc-leaders-defend-primary-election-result-ask-incumbent-senator-to-accept-defeat.html
+2026-05-20 22:24:08 [INFO] 151. [PREMIUMTIMESNG] The missing numbers in education metrics, By Zainab Suleiman Okino
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/opinion/881358-the-missing-numbers-in-education-metrics-by-zainab-suleiman-okino.html
+2026-05-20 22:24:08 [INFO] 152. [PREMIUMTIMESNG] PT HEALTH WATCH: Why fibroids, multiple pregnancies raise risk of postpartum haemorrhage – Expert
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/871015-pt-health-watch-why-fibroids-multiple-pregnancies-raise-risk-of-postpartum-haemorrhage-expert.html
+2026-05-20 22:24:08 [INFO] 153. [PREMIUMTIMESNG] PT Health Watch: Poor awareness, low screening, driving high cervical cancer burden in Nigeria – Expert
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/880026-pt-health-watch-poor-awareness-low-screening-driving-high-cervical-cancer-burden-in-nigeria-expert.html
+2026-05-20 22:24:08 [INFO] 154. [PREMIUMTIMESNG] PT Health Watch: Hidden genotype risks beyond AA, AS drive Nigeria’s sickle cell burden- Expert
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/878062-pt-health-watch-hidden-genotype-risks-beyond-aa-as-drive-nigerias-sickle-cell-burden-expert.html
+2026-05-20 22:24:08 [INFO] 155. [PREMIUMTIMESNG] PT Health Watch: Women face greater migraine burden as hormones, lifestyle factors drive risk- Expert
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/874602-pt-health-watch-women-face-greater-migraine-burden-as-hormones-lifestyle-factors-drive-risk-expert.html
+2026-05-20 22:24:08 [INFO] 156. [PREMIUMTIMESNG] PT Health Watch: Beyond a rash, what eczema really is
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/872751-pt-health-watch-beyond-a-rash-what-eczema-really-is.html
+2026-05-20 22:24:08 [INFO] 157. [DAILYINTELNEWSPAPER] BREAKING: One of the Oyo abducted teacher have been beheaded by bandits
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.dailyintelnewspaper.com/breaking-oyo-abducted-teacher-have-been-beheaded-by-bandits/
+2026-05-20 22:24:08 [INFO] 158. [DAILYINTELNEWSPAPER] The auctioning of democracy, godfathers, stolen wealth, and citizens are silent in Nigeria’s billion-naira nomination circus
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://www.dailyintelnewspaper.com/the-auctioning-of-democracy-godfathers-stolen-wealth-and-citizens-are-silent-in-nigerias-billion-naira-nomination-circus/
+2026-05-20 22:24:08 [INFO] 159. [DAILYINTELNEWSPAPER] Principal and several students have been missing after gunmen invaded Oyo Secondary School
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.dailyintelnewspaper.com/principal-and-several-students-have-been-missing-after-gunmen-invade-oyo-secondary-school/
+2026-05-20 22:24:08 [INFO] 160. [DAILYINTELNEWSPAPER] Finance minister denies error report on the new tax law
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.dailyintelnewspaper.com/finance-minister-denies-error-report-on-the-new-tax-law/
+2026-05-20 22:24:08 [INFO] 161. [DAILYINTELNEWSPAPER] Abia Judiciary workers suspend strike after signing MoU with government
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.dailyintelnewspaper.com/abia-judiciary-workers-suspend-strike-after-signing-mou-with-government/
+2026-05-20 22:24:08 [INFO] 162. [DAILYINTELNEWSPAPER] Abia Judiciary workers suspend strike after signing MoU with government
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://www.dailyintelnewspaper.com/abia-judiciary-workers-suspend-strike-after-signing-mou-with-government/
+2026-05-20 22:24:08 [INFO] 163. [NEWSCALLMEDIA] Jobberman Brings Free Skills Training to Abia Students: “Don’t Let the Global Economy Leave You Behind”.
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://newscallmedia.com/news/jobberman-brings-free-skills-training-to-abia-students-don-t-let-the-global-economy-leave-you-behind
+2026-05-20 22:24:08 [INFO] 164. [NEWSCALLMEDIA] Standard Chartered: DeFi Is Set to Become the Backbone of a $4 Trillion Tokenized Economy.
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://newscallmedia.com/news/standard-chartered-defi-is-set-to-become-the-backbone-of-a-4-trillion-tokenized-economy
+2026-05-20 22:24:08 [INFO] 165. [NEWSCALLMEDIA] “Red Card for Public Health: Measles Is Already Winning Before the World Cup Kicks Off”
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://newscallmedia.com/news/red-card-for-public-health-measles-is-already-winning-before-the-world-cup-kicks-off
+2026-05-20 22:24:08 [INFO] 166. [NEWSCALLMEDIA] Police Kill Suspected Kidnapper, Recover AK-47 After Gun Battle in Plateau
+2026-05-20 22:24:08 [INFO]    Keywords : Plateau
+2026-05-20 22:24:08 [INFO]    Link     : news/police-kill-suspected-kidnapper-recover-ak-47-after-gun-battle-in-plateau
+2026-05-20 22:24:08 [INFO] 167. [NEWSCALLMEDIA] Jobberman Brings Free Skills Training to Abia Students: “Don’t Let the Global Economy Leave You Behind”.
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : news/jobberman-brings-free-skills-training-to-abia-students-don-t-let-the-global-economy-leave-you-behind
+2026-05-20 22:24:08 [INFO] 168. [NEWSCALLMEDIA] LASU Crowned Nigeria’s Top Choice University for Second Straight Year with Massive 84,000+ Applications.
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : education
+2026-05-20 22:24:08 [INFO] 169. [NEWSCALLMEDIA] From First-Class Mind to ₦7 Million Triumph: Soludo Celebrates Young Economist Who Walked in His Footsteps.
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : news/from-first-class-mind-to-7-million-triumph-soludo-celebrates-young-economist-who-walked-in-his-footsteps
+2026-05-20 22:24:08 [INFO] 170. [NEWSCALLMEDIA] NELFUND warns against fake student loan registration portal
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : news/nelfund-warns-against-fake-student-loan-registration-portal
+2026-05-20 22:24:08 [INFO] 171. [NEWSCALLMEDIA] Bridging Faith and Academia: Governor Soludo Appoints Bishop Kukah as Chancellor of Chukwuemeka Odumegwu Ojukwu University
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : news/bridging-faith-and-academia-governor-soludo-appoints-bishop-kukah-as-chancellor-of-chukwuemeka-odumegwu-ojukwu-university
+2026-05-20 22:24:08 [INFO] 172. [NEWSCALLMEDIA] Nigeria Launches Historic Support System for Brilliant Underage University Students.
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : news/nigeria-launches-historic-support-system-for-brilliant-underage-university-students
+2026-05-20 22:24:08 [INFO] 173. [NEWSCALLMEDIA] LASU Crowned Nigeria’s Top Choice University for Second Straight Year with Massive 84,000+ Applications.
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : news/lasu-crowned-nigeria-s-top-choice-university-for-second-straight-year-with-massive-84-000-applications
+2026-05-20 22:24:08 [INFO] 174. [NEWSCALLMEDIA] Abia State Launches Biogas Pilot Project in Secondary School to Boost Renewable Energy.
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : news/abia-state-launches-biogas-pilot-project-in-secondary-school-to-boost-renewable-energy
+2026-05-20 22:24:08 [INFO] 175. [NEWSCALLMEDIA] Jobberman Brings Free Skills Training to Abia Students: “Don’t Let the Global Economy Leave You Behind”.
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : news/jobberman-brings-free-skills-training-to-abia-students-don-t-let-the-global-economy-leave-you-behind
+2026-05-20 22:24:08 [INFO] 176. [NEXTEDITION] BREAKING: Tonye Cole Withdraws From Rivers APC Governorship Primary Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/breaking-tonye-cole-withdraws-from-rivers-apc-governorship-primary-election
+2026-05-20 22:24:08 [INFO] 177. [NEXTEDITION] NLC Demands Urgent Action Over Oyo School Abductions
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/nlc-demands-urgent-action-over-oyo-school-abductions
+2026-05-20 22:24:08 [INFO] 178. [NEXTEDITION] BREAKING: Tonye Cole Withdraws From Rivers APC Governorship Primary Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/breaking-tonye-cole-withdraws-from-rivers-apc-governorship-primary-election
+2026-05-20 22:24:08 [INFO] 179. [NEXTEDITION] Thugs Disrupt APC Primary Election At Isolo/Oshodi Ward 1
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/thugs-disrupt-apc-primary-election-at-isolo-oshodi-ward-1
+2026-05-20 22:24:08 [INFO] 180. [NEXTEDITION] Thugs Disrupt APC Primary Election At Isolo/Oshodi Ward 1
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/thugs-disrupt-apc-primary-election-at-isolo-oshodi-ward-1
+2026-05-20 22:24:08 [INFO] 181. [NEXTEDITION] BREAKING: Man Shot Dead At Venue Of APC Primaries In Plateau
+2026-05-20 22:24:08 [INFO]    Keywords : Plateau
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/breaking-man-shot-dead-at-venue-of-apc-primaries-in-plateau
+2026-05-20 22:24:08 [INFO] 182. [NEXTEDITION] Shehu Sani Wins Kaduna Central APC Senatorial Ticket
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/shehu-sani-wins-kaduna-central-apc-senatorial-ticket
+2026-05-20 22:24:08 [INFO] 183. [NEXTEDITION] Okowa Defeats Nwoko, Ali For APC Delta North Senatorial Ticket
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/okowa-defeats-nwoko-ali-for-apc-delta-north-senatorial-ticket
+2026-05-20 22:24:08 [INFO] 184. [NEXTEDITION] Kaduna APC Aspirants Reject National Assembly Primaries, allege imposition
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/kaduna-apc-aspirants-reject-national-assembly-primaries-allege-imposition
+2026-05-20 22:24:08 [INFO] 185. [NEXTEDITION] 2027: Deputy Speaker, Kalu, Wins APC Ticket For 3rd Term Bid
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/2027-deputy-speaker-kalu-wins-apc-ticket-for-3rd-term-bid
+2026-05-20 22:24:08 [INFO] 186. [NEXTEDITION] Yuletide: Police Restricts Movement In 5 Plateau LGs
+2026-05-20 22:24:08 [INFO]    Keywords : Plateau
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/yuletide-police-restricts-movement-in-5-plateau-lgs
+2026-05-20 22:24:08 [INFO] 187. [NEXTEDITION] Gombe: ANGO Harps On Local Government Autonomy
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/gombe-ango-harps-on-local-government-autonomy
+2026-05-20 22:24:08 [INFO] 188. [NEXTEDITION] Food Security: Zulum Unveils 7 Pilot Irrigation Schemes
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/food-security-zulum-unveils-7-pilot-irrigation-schemes
+2026-05-20 22:24:08 [INFO] 189. [NEXTEDITION] Bayelsa APC Calls For Sanctions Against Members Who Betrayed It At Governorship Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/bayelsa-apc-calls-for-sanctions-against-members-who-betrayed-it-at-governorship-election
+2026-05-20 22:24:08 [INFO] 190. [NEXTEDITION] Governor Seyi Makinde Is Using Infrastructural Development To Expand The Economy Of Oyo State — Shangodoyin
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/governor-seyi-makinde-is-using-infrastructural-development-to-expand-the-economy-of-oyo-state-sangodoyin
+2026-05-20 22:24:08 [INFO] 191. [NEXTEDITION] #EndSARS Protests: Before It Is Too Late!
+2026-05-20 22:24:08 [INFO]    Keywords : protest
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/its-been-12-days-of-sustained-nationwide-street-protests-against-police-brutality-under-the-aegis-of-the-special-anti-robbery-squad-sars-last-weeks-reported-dissolution-of-the-way
+2026-05-20 22:24:08 [INFO] 192. [NEXTEDITION] Akpet: Cross River Community Where Children Shun Education For Illegal Mining
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/akpet-cross-river-community-where-children-shun-education-for-illegal-mining
+2026-05-20 22:24:08 [INFO] 193. [NEXTEDITION] Avoiding the coming deaths in 2027 elections
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/avoiding-the-coming-deaths-in-2027-elections
+2026-05-20 22:24:08 [INFO] 194. [NEXTEDITION] UMO ENO: THE MAN POLITICS HAS NOT CHANGED
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://nextedition.com.ng/umo-eno-the-man-politics-has-not-changed
+2026-05-20 22:24:08 [INFO] 195. [METRODAILYNG] Health Road Walk: Experts Harp on Benefits of Alternative Medicine
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://metrodailyng.com/health-road-walk-experts-harp-on-benefits-of-alternative-medicine/
+2026-05-20 22:24:08 [INFO] 196. [THEEAGLEONLINE] APC suspends Badagry primary election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/apc-suspends-badagry-primary-election/
+2026-05-20 22:24:08 [INFO] 197. [THEEAGLEONLINE] Sowore and the politics of consequence-free dissent, by Stephen Okoroafor
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/sowore-and-the-politics-of-consequence-free-dissent-by-stephen-okoroafor/
+2026-05-20 22:24:08 [INFO] 198. [THEEAGLEONLINE] Akpabio and the uncommon politics of certainty, by Eseme Eyiboh
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/akpabio-and-the-uncommon-politics-of-certainty-by-eseme-eyiboh/
+2026-05-20 22:24:08 [INFO] 199. [THEEAGLEONLINE] 2027: Gabam-led SDP picks presidential candidate
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/2027-gabam-led-sdp-picks-presidential-candidate/
+2026-05-20 22:24:08 [INFO] 200. [THEEAGLEONLINE] APC suspends Badagry primary election
+2026-05-20 22:24:08 [INFO]    Keywords : election, government
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/apc-suspends-badagry-primary-election/
+2026-05-20 22:24:08 [INFO] 201. [THEEAGLEONLINE] AGN revalidates membership, urges actors to subscribe to health scheme
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/agn-revalidates-membership-urges-actors-to-subscribe-to-health-scheme/
+2026-05-20 22:24:08 [INFO] 202. [THEEAGLEONLINE] APC suspends Badagry primary election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://theeagleonline.com.ng/apc-suspends-badagry-primary-election/
+2026-05-20 22:24:08 [INFO] 203. [TRUSTBASENEWS] BREAKING: Gabam-led SDP expels Adewole Adebayo, others
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/gabam-led-sdp-expels-adewole-adebayo-others/
+2026-05-20 22:24:08 [INFO] 204. [TRUSTBASENEWS] Bauchi Guber: Leading APC aspirant, Umar withdraws from race
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/bauchi-guber-leading-apc-aspirant-umar-withdraws-from-race/
+2026-05-20 22:24:08 [INFO] 205. [TRUSTBASENEWS] 2027 politics too dirty for Jonathan – Sule Lamido
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/2027-politics-too-dirty-for-jonathan-sule-lamido/
+2026-05-20 22:24:08 [INFO] 206. [TRUSTBASENEWS] Former Benue Speaker, Dajoh withdraws from APC House of Assembly primary election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/former-benue-speaker-dajoh-withdraws-from-apc-house-of-assembly-primary-election/
+2026-05-20 22:24:08 [INFO] 207. [TRUSTBASENEWS] APC retains 33 aspirants for Rivers Assembly primaries, disqualifies 65
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/apc-retains-33-aspirants-for-rivers-assembly-primaries-disqualifies-65/
+2026-05-20 22:24:08 [INFO] 208. [TRUSTBASENEWS] Yobe Security Council warns politicians against thuggery ahead of 2027 elections
+2026-05-20 22:24:08 [INFO]    Keywords : election, security
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/yobe-security-council-warns-politicians-against-thuggery-ahead-of-2027-elections/
+2026-05-20 22:24:08 [INFO] 209. [TRUSTBASENEWS] Uche Ogbuagu, 3 women, others emerge winners of Imo PDP Reps primaries
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://trustbasenews.ng/uche-ogbuagu-3-women-others-emerge-winners-of-imo-pdp-reps-primaries/
+2026-05-20 22:24:08 [INFO] 210. [THEWHISTLER] Nigeria Must Quit ‘Politics Without Direction’ – Hayatu-Deen
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/nigeria-must-quit-politics-without-direction-hayatu-deen/
+2026-05-20 22:24:08 [INFO] 211. [THEWHISTLER] WHO Awards Six For Leadership In Primary Health
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/who-awards-six-for-leadership-in-primary-health/
+2026-05-20 22:24:08 [INFO] 212. [THEWHISTLER] Hotels Blame High Costs, Politics For Weak World Cup Demand
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/hotels-blame-high-costs-politics-for-weak-world-cup-demand/
+2026-05-20 22:24:08 [INFO] 213. [THEWHISTLER] Ex-NNPC Chief Finance Director Emerges Sokoto East APC Senatorial Candidate
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/news/politics/
+2026-05-20 22:24:08 [INFO] 214. [THEWHISTLER] Nigeria Must Quit ‘Politics Without Direction’ – Hayatu-Deen
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/nigeria-must-quit-politics-without-direction-hayatu-deen/
+2026-05-20 22:24:08 [INFO] 215. [THEWHISTLER] NITDA Warns Nigerians Using ChatGPT On New Security Flaws
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/nitda-warns-nigerians-using-chatgpt-on-new-security-flaws/
+2026-05-20 22:24:08 [INFO] 216. [THEWHISTLER] OPINION: Nigeria’s Economy May Not Survive On ‘Statistical Engineering’
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/opinion-nigerias-economy-may-not-survive-on-statistical-engineering/
+2026-05-20 22:24:08 [INFO] 217. [THEWHISTLER] Famadewa’s Appointment: What Exactly Is Homeland Security?
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://thewhistler.ng/famadewas-appointment-what-exactly-is-homeland-security/
+2026-05-20 22:24:08 [INFO] 218. [EXPONENTNEWS] Felix Ohagwu Takes Helm as Ondo State Police Commissioner
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/19/felix-ohagwu-takes-helm-as-ondo-state-police-commissioner/
+2026-05-20 22:24:08 [INFO] 219. [EXPONENTNEWS] APC Concludes Peaceful, Transparent House of Reps Primaries in Ondo State
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/18/apc-concludes-peaceful-transparent-house-of-reps-primaries-in-ondo-state/
+2026-05-20 22:24:08 [INFO] 220. [EXPONENTNEWS] Tension Rocks APC Reps Primary in Ondo as Thugs Disrupt Result Declaration
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/18/tension-rocks-apc-reps-primary-in-ondo-as-thugs-disrupt-result-declaration/
+2026-05-20 22:24:08 [INFO] 221. [EXPONENTNEWS] Bacterial Meningitis: Sokoto Intensifies Response as Health Expert Urges Early Detection
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/15/bacterial-meningitis-sokoto-intensifies-response-as-health-expert-urges-early-detection/
+2026-05-20 22:24:08 [INFO] 222. [EXPONENTNEWS] Primary Appeal C’tte: Ondo APC invites aggrieved aspirants to present case
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/17/primary-appeal-ctte-ondo-apc-invites-aggrieved-aspirants-to-present-case/
+2026-05-20 22:24:08 [INFO] 223. [EXPONENTNEWS] Tinubu Urges APC Leaders to Give Women, Youth Fair Chance in Primaries
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/15/tinubu-urges-apc-leaders-to-give-women-youth-fair-chance-in-primaries/
+2026-05-20 22:24:08 [INFO] 224. [EXPONENTNEWS] Mimiko Joins APC, Backs Tinubu’s Reforms
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/14/mimiko-joins-apc-backs-tinubus-reforms/
+2026-05-20 22:24:08 [INFO] 225. [EXPONENTNEWS] ‎Ondo: Anywhere INEC Stops Talking, There Will Be Room for Suspicion — Agboke
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/12/ondo-anywhere-inec-stops-talking-there-will-be-room-for-suspicion-agboke/
+2026-05-20 22:24:08 [INFO] 226. [EXPONENTNEWS] ADA Distances Itself from Ardo’s Remarks on NDC Registration
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/05/ada-distances-itself-from-ardos-remarks-on-ndc-registration/
+2026-05-20 22:24:08 [INFO] 227. [EXPONENTNEWS] Poroye Backs Akingboye, Thanks Aiyedatiwa for Uniting APC Ahead of Ilaje/Ese-Odo Poll in Ondo State
+2026-05-20 22:24:08 [INFO]    Keywords : politics
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2026/05/01/poroye-backs-akingboye-thanks-aiyedatiwa-for-uniting-apc-ahead-of-ilaje-ese-odo-poll-in-ondo-state/
+2026-05-20 22:24:08 [INFO] 228. [EXPONENTNEWS] Tanzania’s Mwabukusi Seeks Review of Disqualification from TLS Presidential Election
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2024/07/18/tanzanias-mwabukusi-seeks-review-of-disqualification-from-tls-presidential-election/
+2026-05-20 22:24:08 [INFO] 229. [EXPONENTNEWS] TINUBU SAYS ECONOMY IS RECOVERING, CELEBRATES OLUBADAN’S CORONATION IN IBADAN
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://exponentnews.com.ng/2025/09/27/tinubu-says-economy-is-recovering-celebrates-olubadans-coronation-in-ibadan/
+2026-05-20 22:24:08 [INFO] 230. [RADIONIGERIA] Elumelu charges Journalists to reject propaganda ahead of 2027 elections
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/20/elumelu-charges-journalists-to-reject-propaganda-ahead-of-2027-elections/
+2026-05-20 22:24:08 [INFO] 231. [RADIONIGERIA] Atiku unveils economic, security plans at ADC presidential screening
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/20/atiku-unveils-economic-security-plans-at-adc-presidential-screening/
+2026-05-20 22:24:08 [INFO] 232. [RADIONIGERIA] INEC fixes June 20 for Warawa/Minjibir By-Election in Kano
+2026-05-20 22:24:08 [INFO]    Keywords : election
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/20/inec-fixes-june-20-for-warawa-minjibir-by-election-in-kano/
+2026-05-20 22:24:08 [INFO] 233. [RADIONIGERIA] NEMA commences campaign on flood preparedness in Zamfara
+2026-05-20 22:24:08 [INFO]    Keywords : flood
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/20/nema-commences-campaign-on-flood-preparedness-in-zamfara/
+2026-05-20 22:24:08 [INFO] 234. [RADIONIGERIA] FG approves additional Deep Seaports to strengthen trade, logistics
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/19/fg-approves-additional-deep-seaports-to-strengthen-trade-logistics/
+2026-05-20 22:24:08 [INFO] 235. [RADIONIGERIA] Anambra provides free blood pressure monitors in primary healthcare centres
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/20/anambra-provides-free-blood-pressure-monitors-in-primary-healthcare-centres/
+2026-05-20 22:24:08 [INFO] 236. [RADIONIGERIA] Perm Sec calls for improved agency collaboration
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/18/perm-sec-calls-for-improved-agency-collaboration/
+2026-05-20 22:24:08 [INFO] 237. [RADIONIGERIA] FG stresses need for science, technology, innovation for sustainable development
+2026-05-20 22:24:08 [INFO]    Keywords : government
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/12/fg-stresses-need-for-science-technology-innovation-for-sustainable-development/
+2026-05-20 22:24:08 [INFO] 238. [RADIONIGERIA] Atiku unveils economic, security plans at ADC presidential screening
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/20/atiku-unveils-economic-security-plans-at-adc-presidential-screening/
+2026-05-20 22:24:08 [INFO] 239. [AUTHORITYNGR] Presidency Pushes RegTech as Tool For Financial Inclusion, Trusted Digital Economy
+2026-05-20 22:24:08 [INFO]    Keywords : economy
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/05/20/presidency-pushes-regtech-as-tool-for-financial-inclusion-trusted-digital-economy/
+2026-05-20 22:24:08 [INFO] 240. [AUTHORITYNGR] ISSA 2026: How NSITF is driving inclusive social security through effective communication
+2026-05-20 22:24:08 [INFO]    Keywords : security
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/05/06/issa-2026-how-nsitf-is-driving-inclusive-social-security-through-effective-communication/
+2026-05-20 22:24:08 [INFO] 241. [AUTHORITYNGR] Stanel CEO, Stanley Uzochukwu completes Oxford leadership programme months after trained in Harvard
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/05/19/stanel-ceo-stanley-uzochukwu-completes-oxford-leadership-programme-months-after-trained-in-harvard/
+2026-05-20 22:24:08 [INFO] 242. [AUTHORITYNGR] X-raying NECO 25 years impactful journey
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/05/14/x-raying-neco-25-years-impactful-journey/
+2026-05-20 22:24:08 [INFO] 243. [AUTHORITYNGR] JAMB sets 150 minimum score for university admissions, fixes deadline for 2026 exercise
+2026-05-20 22:24:08 [INFO]    Keywords : education
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/05/11/jamb-sets-150-minimum-score-for-university-admissions-fixes-deadline-for-2026-exercise/
+2026-05-20 22:24:08 [INFO] 244. [AUTHORITYNGR] Protesters Occupy Health Ministry, Accuse NAFDAC Boss of Policy Abuse
+2026-05-20 22:24:08 [INFO]    Keywords : health
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/03/26/protesters-occupy-health-ministry-accuse-nafdac-boss-of-policy-abuse/
+2026-05-20 22:24:08 [INFO] 245. [AUTHORITYNGR] Alcohol Ban Controversy Sparks Protest, Renews Debate on Regulation
+2026-05-20 22:24:08 [INFO]    Keywords : protest
+2026-05-20 22:24:08 [INFO]    Link     : https://authorityngr.com/2026/03/25/alcohol-ban-controversy-sparks-protest-renews-debate-on-regulation/
+2026-05-21 04:01:11 [INFO] Using site list: 'plateau_news_sites.csv'
+2026-05-21 04:01:11 [INFO] Selected 10 national + 2 state sites from 'plateau_news_sites.csv' (102 national + 2 state total).
+2026-05-21 04:01:11 [INFO] Added 'Plateau' to keyword list for local relevance matching.
+2026-05-21 04:01:14 [INFO] Crawling channelstv...
+2026-05-21 04:01:16 [INFO]   Fetching content: Ex-Gov Lalong, Former Reps Deputy Speaker, Others Win APC NASS Primari...
+2026-05-21 04:01:18 [INFO]   Fetching content: Security Operatives Bust Kidnappers’ Hideouts In Edo, Arrest 12 Suspec...
+2026-05-21 04:01:19 [INFO]   Fetching content: Ex-Imo Deputy Gov Madumere Emerges PDP Candidate For Imo East Senatori...
+2026-05-21 04:01:21 [INFO]   Fetching content: UPDATED: Fubara Withdraws From APC Governorship Primary...
+2026-05-21 04:01:23 [INFO]   Fetching content: Kaduna Assembly Speaker, Deputy, Majority Leader Secure APC Tickets Th...
+2026-05-21 04:01:23 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:24 [INFO]   Fetching content: Taraba APC Governorship Aspirant David Kente Steps Aside From Race...
+2026-05-21 04:01:24 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:25 [INFO]   Fetching content: Gombe Group Rejects APC Primary, Urges Calm Among Youths...
+2026-05-21 04:01:27 [INFO]   Fetching content: ‘Political Conmen’, Kenneth Okonkwo Fires At Obi, Kwankwaso Over ADC E...
+2026-05-21 04:01:27 [ERROR] Error fetching javascript:void(0): No connection adapters were found for 'javascript:void(0)'
+2026-05-21 04:01:28 [INFO]   Fetching content: Wike Not Only Destabilizing Rivers State, But Also Politics Of Nigeria...
+2026-05-21 04:01:28 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:29 [INFO]   Fetching content: Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + Mor...
+2026-05-21 04:01:29 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:30 [INFO]   Fetching content: Politics Today...
+2026-05-21 04:01:30 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:31 [INFO]   Fetching content: Oyo School Abduction, Surulere LSHA Election Struggle, Desmond Speaks ...
+2026-05-21 04:01:31 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:32 [INFO]   Fetching content: Primaries: Why Parties Must Consider Open-Secret Ballot System - Ken O...
+2026-05-21 04:01:32 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:33 [INFO]   Fetching content: ‘Such Dirty Politics’, Stakeholders Share Views On APC Primaries Outco...
+2026-05-21 04:01:33 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:34 [INFO]   Fetching content: Performance Or Zoning: Issues Around Equity Trail Kwara APC Primaries ...
+2026-05-21 04:01:34 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:35 [INFO]   Fetching content: ‘You Can Gather In The Name Of Election But There’s Only One PDP’, Tur...
+2026-05-21 04:01:35 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:36 [INFO]   Fetching content: 2027: Lawyer, Ex-GSHA Minority leader Discuss Legalese Of Consensus Ca...
+2026-05-21 04:01:36 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:37 [INFO]   Fetching content: Head Of Service Of The Federation Speaks On Reforms, Accountability + ...
+2026-05-21 04:01:37 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:38 [INFO]   Fetching content: 2027: Not Picking Southern Candidate Will Make ADC Lose Election – Tan...
+2026-05-21 04:01:38 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 04:01:39 [INFO]   Fetching content: Blaqbonez Gives Reasons Why He Has Never Voted In An Election...
+2026-05-21 04:01:39 [ERROR] Error fetching Blaqbonez Gives Reasons Why He Has Never Voted In An Election: Invalid URL 'Blaqbonez Gives Reasons Why He Has Never Voted In An Election': No scheme supplied. Perhaps you meant https://Blaqbonez Gives Reasons Why He Has Never Voted In An Election?
+2026-05-21 04:01:40 [INFO]   Fetching content: Beyond The Uterus: Why The PCOS Name Change Is A Major Win For Women...
+2026-05-21 04:01:42 [INFO]   Fetching content: Again, Fubara Approves Promotion Of Rivers Civil Servants...
+2026-05-21 04:01:44 [INFO]   Fetching content: Senate Condemns Students’ Abduction In Borno, Oyo, Promises State Poli...
+2026-05-21 04:01:45 [INFO]   Fetching content: Germany To Treat US Ebola Patient From DR Congo...
+2026-05-21 04:01:47 [INFO] Found 24 articles from channelstv.
+2026-05-21 04:01:49 [INFO] Crawling premiumtimesng...
+2026-05-21 04:01:51 [INFO]   Fetching content: Can NDC zoning presidency to South affect Tinubu’s re-election bid?...
+2026-05-21 04:01:53 [INFO]   Fetching content: FAAN announces additional health screening measures, enhanced Ebola su...
+2026-05-21 04:01:56 [INFO]   Fetching content: Recycle or Cut Production: The Politics of Plastics Economy...
+2026-05-21 04:01:58 [INFO]   Fetching content: CSOs condemn Borno schoolchildren abduction, demand security overhaul...
+2026-05-21 04:02:00 [INFO]   Fetching content: Three court-sacked Plateau PDP lawmakers resurface on APC tickets as p...
+2026-05-21 04:02:02 [INFO]   Fetching content: Atiku appears before ADC screening panel, promises robust security ref...
+2026-05-21 04:02:04 [INFO]   Fetching content: Kogi East APC leaders defend primary election result, ask incumbent se...
+2026-05-21 04:02:06 [INFO]   Fetching content: The missing numbers in education metrics, By Zainab Suleiman Okino...
+2026-05-21 04:02:09 [INFO]   Fetching content: PT HEALTH WATCH: Why fibroids, multiple pregnancies raise risk of post...
+2026-05-21 04:02:11 [INFO]   Fetching content: PT Health Watch: Poor awareness, low screening, driving high cervical ...
+2026-05-21 04:02:14 [INFO]   Fetching content: PT Health Watch: Hidden genotype risks beyond AA, AS drive Nigeria’s s...
+2026-05-21 04:02:16 [INFO]   Fetching content: PT Health Watch: Women face greater migraine burden as hormones, lifes...
+2026-05-21 04:02:19 [INFO]   Fetching content: PT Health Watch: Beyond a rash, what eczema really is...
+2026-05-21 04:02:21 [INFO] Found 13 articles from premiumtimesng.
+2026-05-21 04:02:23 [INFO] Crawling dailytrust...
+2026-05-21 04:02:24 [INFO] Found 0 articles from dailytrust.
+2026-05-21 04:02:26 [INFO] Crawling nta...
+2026-05-21 04:02:28 [INFO]   Fetching content: BREAKING: FG Explains Why Top Ministers Are Resigning...
+2026-05-21 04:02:30 [INFO] Found 1 articles from nta.
+2026-05-21 04:02:32 [INFO] Crawling thenationonlineng...
+2026-05-21 04:02:34 [INFO] Found 0 articles from thenationonlineng.
+2026-05-21 04:02:36 [INFO] Crawling leadership...
+2026-05-21 04:02:38 [INFO]   Fetching content: ‎Government Should Move Beyond Condolence Speeches – Kehinde Bankole S...
+2026-05-21 04:02:40 [INFO]   Fetching content: Murder in Dublin: Congolese Man Killed By Security Men over allegation...
+2026-05-21 04:02:43 [INFO]   Fetching content: Votes Will Count, Says INEC Chairman Amupitan Ahead of Ekiti Governors...
+2026-05-21 04:02:45 [INFO]   Fetching content: Pin Up official: Account Registration And Security Features...
+2026-05-21 04:02:48 [INFO]   Fetching content: Accelerate Security Reforms, Secure Communities Ahead Of 2027 Election...
+2026-05-21 04:02:50 [INFO]   Fetching content: Kaduna’s Skills Revolution: A Bold Investment In Youth, Productivity A...
+2026-05-21 04:02:53 [INFO] Found 6 articles from leadership.
+2026-05-21 04:02:55 [INFO] Crawling gazettengr...
+2026-05-21 04:02:56 [INFO] Found 0 articles from gazettengr.
+2026-05-21 04:02:58 [INFO] Crawling tvcnews...
+2026-05-21 04:03:01 [INFO]   Fetching content: Zamfara Government Treats 6842 In 17 Phases Of Medical Outreach...
+2026-05-21 04:03:02 [INFO]   Fetching content: Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal's Re...
+2026-05-21 04:03:04 [INFO]   Fetching content: Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal's Re...
+2026-05-21 04:03:06 [INFO]   Fetching content: Makinde Signs Executive Order Regulating Vigilante, Security Groups In...
+2026-05-21 04:03:08 [INFO]   Fetching content: Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal’s Re...
+2026-05-21 04:03:10 [INFO]   Fetching content: Oyo State Government, Security Agencies Clear Ibadan Streets of Destit...
+2026-05-21 04:03:11 [INFO]   Fetching content: Tech Firm Calls For Cyber security Resilience At Cyber security Awards...
+2026-05-21 04:03:13 [INFO]   Fetching content: FULL VIDEO: INEC Chairman Speaks On 2027 Elections, Electronic Transmi...
+2026-05-21 04:03:13 [ERROR] Error fetching #top-video: Invalid URL '#top-video': No scheme supplied. Perhaps you meant https://#top-video?
+2026-05-21 04:03:14 [INFO]   Fetching content: Zamfara Government Treats 6842 In 17 Phases Of Medical Outreach...
+2026-05-21 04:03:16 [INFO]   Fetching content: WHO Declares Ebola Outbreak In DRC, Uganda Global Health Emergency...
+2026-05-21 04:03:18 [INFO] Found 10 articles from tvcnews.
+2026-05-21 04:03:20 [INFO] Crawling authorityngr...
+2026-05-21 04:03:23 [INFO]   Fetching content: Atiku unveils economic rescue, security plans as he visits ADC screeni...
+2026-05-21 04:03:26 [INFO]   Fetching content: Presidency Pushes RegTech as Tool For Financial Inclusion, Trusted Dig...
+2026-05-21 04:03:29 [INFO]   Fetching content: ISSA 2026: How NSITF is driving inclusive social security through effe...
+2026-05-21 04:03:32 [INFO]   Fetching content: Stanel CEO, Stanley Uzochukwu completes Oxford leadership programme mo...
+2026-05-21 04:03:34 [INFO]   Fetching content: X-raying NECO 25 years impactful journey...
+2026-05-21 04:03:37 [INFO]   Fetching content: JAMB sets 150 minimum score for university admissions, fixes deadline ...
+2026-05-21 04:03:39 [INFO]   Fetching content: Atiku unveils economic rescue, security plans as he visits ADC screeni...
+2026-05-21 04:03:42 [INFO]   Fetching content: Protesters Occupy Health Ministry, Accuse NAFDAC Boss of Policy Abuse...
+2026-05-21 04:03:44 [INFO]   Fetching content: Alcohol Ban Controversy Sparks Protest, Renews Debate on Regulation...
+2026-05-21 04:03:47 [INFO]   Fetching content: Atiku unveils economic rescue, security plans as he visits ADC screeni...
+2026-05-21 04:03:49 [INFO] Found 10 articles from authorityngr.
+2026-05-21 04:03:51 [INFO] Crawling plateaustate...
+2026-05-21 04:03:53 [INFO] Found 0 articles from plateaustate.
+2026-05-21 04:03:55 [INFO] Crawling bbc...
+2026-05-21 04:03:56 [INFO] Found 0 articles from bbc.
+2026-05-21 04:03:58 [INFO] Crawling reuters...
+2026-05-21 04:03:59 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-21 04:03:59 [INFO] Found 0 articles from reuters.
+2026-05-21 04:04:01 [INFO] --- Scraped Headlines ---
+2026-05-21 04:04:01 [INFO] 1. [CHANNELSTV] Ex-Gov Lalong, Former Reps Deputy Speaker, Others Win APC NASS Primaries In Plateau
+2026-05-21 04:04:01 [INFO]    Keywords : Plateau
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/20/ex-gov-lalong-former-reps-deputy-speaker-others-win-apc-nass-primaries-in-plateau/
+2026-05-21 04:04:01 [INFO] 2. [CHANNELSTV] Security Operatives Bust Kidnappers’ Hideouts In Edo, Arrest 12 Suspects
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/19/security-operatives-bust-kidnappers-hideouts-in-edo-arrest-12-suspects/
+2026-05-21 04:04:01 [INFO] 3. [CHANNELSTV] Ex-Imo Deputy Gov Madumere Emerges PDP Candidate For Imo East Senatorial Seat
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/20/ex-imo-deputy-gov-madumere-emerges-pdp-candidate-for-imo-east-senatorial-seat/
+2026-05-21 04:04:01 [INFO] 4. [CHANNELSTV] UPDATED: Fubara Withdraws From APC Governorship Primary
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/20/just-in-fubara-withdraws-from-apc-governorship-primary/
+2026-05-21 04:04:01 [INFO] 5. [CHANNELSTV] Kaduna Assembly Speaker, Deputy, Majority Leader Secure APC Tickets Through Consensus
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 6. [CHANNELSTV] Taraba APC Governorship Aspirant David Kente Steps Aside From Race
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 7. [CHANNELSTV] Gombe Group Rejects APC Primary, Urges Calm Among Youths
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/20/gombe-group-rejects-apc-primary-urges-calm-among-youths/
+2026-05-21 04:04:01 [INFO] 8. [CHANNELSTV] ‘Political Conmen’, Kenneth Okonkwo Fires At Obi, Kwankwaso Over ADC Exit | Politics Today
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : javascript:void(0)
+2026-05-21 04:04:01 [INFO] 9. [CHANNELSTV] Wike Not Only Destabilizing Rivers State, But Also Politics Of Nigeria
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 10. [CHANNELSTV] Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + More|Politics Today
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 11. [CHANNELSTV] Politics Today
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 12. [CHANNELSTV] Oyo School Abduction, Surulere LSHA Election Struggle, Desmond Speaks On Ordeal |Sunrise Daily
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 13. [CHANNELSTV] Primaries: Why Parties Must Consider Open-Secret Ballot System - Ken Okolugbo | Lunchtime Politics
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 14. [CHANNELSTV] ‘Such Dirty Politics’, Stakeholders Share Views On APC Primaries Outcome | Lunchtime Politics
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 15. [CHANNELSTV] Performance Or Zoning: Issues Around Equity Trail Kwara APC Primaries + More | Lunchtime Politics
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 16. [CHANNELSTV] ‘You Can Gather In The Name Of Election But There’s Only One PDP’, Turnah Reviews Internal Issues
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 17. [CHANNELSTV] 2027: Lawyer, Ex-GSHA Minority leader Discuss Legalese Of Consensus Candidacy | Lunchtime Politics
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 18. [CHANNELSTV] Head Of Service Of The Federation Speaks On Reforms, Accountability + More | Politics Today
+2026-05-21 04:04:01 [INFO]    Keywords : politics
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 19. [CHANNELSTV] 2027: Not Picking Southern Candidate Will Make ADC Lose Election – Tanko
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : #
+2026-05-21 04:04:01 [INFO] 20. [CHANNELSTV] Blaqbonez Gives Reasons Why He Has Never Voted In An Election
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : Blaqbonez Gives Reasons Why He Has Never Voted In An Election
+2026-05-21 04:04:01 [INFO] 21. [CHANNELSTV] Beyond The Uterus: Why The PCOS Name Change Is A Major Win For Women
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/14/beyond-the-uterus-why-the-pcos-name-change-is-a-major-win-for-women/
+2026-05-21 04:04:01 [INFO] 22. [CHANNELSTV] Again, Fubara Approves Promotion Of Rivers Civil Servants
+2026-05-21 04:04:01 [INFO]    Keywords : education
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/18/again-fubara-approves-promotion-of-rivers-civil-servants/
+2026-05-21 04:04:01 [INFO] 23. [CHANNELSTV] Senate Condemns Students’ Abduction In Borno, Oyo, Promises State Police
+2026-05-21 04:04:01 [INFO]    Keywords : education
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/17/senate-condemns-students-abduction-in-borno-oyo-promises-state-police-soon/
+2026-05-21 04:04:01 [INFO] 24. [CHANNELSTV] Germany To Treat US Ebola Patient From DR Congo
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.channelstv.com/2026/05/19/germany-to-treat-us-ebola-patient-from-dr-congo/
+2026-05-21 04:04:01 [INFO] 25. [PREMIUMTIMESNG] Can NDC zoning presidency to South affect Tinubu’s re-election bid?
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/news/headlines/880732-can-ndc-zoning-presidency-to-south-affect-tinubus-re-election-bid.html
+2026-05-21 04:04:01 [INFO] 26. [PREMIUMTIMESNG] FAAN announces additional health screening measures, enhanced Ebola surveillance at Nigerian airports
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/business/business-news/881176-faan-announces-additional-health-screening-measures-enhanced-ebola-surveillance-at-nigerian-airports.html
+2026-05-21 04:04:01 [INFO] 27. [PREMIUMTIMESNG] Recycle or Cut Production: The Politics of Plastics Economy
+2026-05-21 04:04:01 [INFO]    Keywords : economy, politics
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/news/top-news/819633-recycle-or-cut-production-the-politics-of-plastics-economy.html
+2026-05-21 04:04:01 [INFO] 28. [PREMIUMTIMESNG] CSOs condemn Borno schoolchildren abduction, demand security overhaul
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/news/more-news/881139-csos-condemn-borno-schoolchildren-abduction-demand-security-overhaul.html
+2026-05-21 04:04:01 [INFO] 29. [PREMIUMTIMESNG] Three court-sacked Plateau PDP lawmakers resurface on APC tickets as primaries unsettle incumbents
+2026-05-21 04:04:01 [INFO]    Keywords : Plateau
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/regional/north-central/881345-three-court-sacked-plateau-pdp-lawmakers-resurface-on-apc-tickets-as-primaries-unsettle-incumbents.html
+2026-05-21 04:04:01 [INFO] 30. [PREMIUMTIMESNG] Atiku appears before ADC screening panel, promises robust security reforms
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/regional/north-central/881346-atiku-appears-before-adc-screening-panel-promises-robust-security-reforms.html
+2026-05-21 04:04:01 [INFO] 31. [PREMIUMTIMESNG] Kogi East APC leaders defend primary election result, ask incumbent senator to accept defeat
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/regional/north-central/881221-east-apc-leaders-defend-primary-election-result-ask-incumbent-senator-to-accept-defeat.html
+2026-05-21 04:04:01 [INFO] 32. [PREMIUMTIMESNG] The missing numbers in education metrics, By Zainab Suleiman Okino
+2026-05-21 04:04:01 [INFO]    Keywords : education
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/opinion/881358-the-missing-numbers-in-education-metrics-by-zainab-suleiman-okino.html
+2026-05-21 04:04:01 [INFO] 33. [PREMIUMTIMESNG] PT HEALTH WATCH: Why fibroids, multiple pregnancies raise risk of postpartum haemorrhage – Expert
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/871015-pt-health-watch-why-fibroids-multiple-pregnancies-raise-risk-of-postpartum-haemorrhage-expert.html
+2026-05-21 04:04:01 [INFO] 34. [PREMIUMTIMESNG] PT Health Watch: Poor awareness, low screening, driving high cervical cancer burden in Nigeria – Expert
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/880026-pt-health-watch-poor-awareness-low-screening-driving-high-cervical-cancer-burden-in-nigeria-expert.html
+2026-05-21 04:04:01 [INFO] 35. [PREMIUMTIMESNG] PT Health Watch: Hidden genotype risks beyond AA, AS drive Nigeria’s sickle cell burden- Expert
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/878062-pt-health-watch-hidden-genotype-risks-beyond-aa-as-drive-nigerias-sickle-cell-burden-expert.html
+2026-05-21 04:04:01 [INFO] 36. [PREMIUMTIMESNG] PT Health Watch: Women face greater migraine burden as hormones, lifestyle factors drive risk- Expert
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/874602-pt-health-watch-women-face-greater-migraine-burden-as-hormones-lifestyle-factors-drive-risk-expert.html
+2026-05-21 04:04:01 [INFO] 37. [PREMIUMTIMESNG] PT Health Watch: Beyond a rash, what eczema really is
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.premiumtimesng.com/health/health-interviews/872751-pt-health-watch-beyond-a-rash-what-eczema-really-is.html
+2026-05-21 04:04:01 [INFO] 38. [NTA] BREAKING: FG Explains Why Top Ministers Are Resigning
+2026-05-21 04:04:01 [INFO]    Keywords : economy
+2026-05-21 04:04:01 [INFO]    Link     : https://www.nta.ng/news/featured/breaking-fg-explains-why-top-ministers-are-resigning
+2026-05-21 04:04:01 [INFO] 39. [LEADERSHIP] ‎Government Should Move Beyond Condolence Speeches – Kehinde Bankole Speaks On Rising Insecurity
+2026-05-21 04:04:01 [INFO]    Keywords : government
+2026-05-21 04:04:01 [INFO]    Link     : https://leadership.ng/government-should-move-beyond-condolence-speeches-kehinde-bankole-speaks-on-rising-insecurity/
+2026-05-21 04:04:01 [INFO] 40. [LEADERSHIP] Murder in Dublin: Congolese Man Killed By Security Men over allegations of Shoplifting
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://leadership.ng/murder-in-dublin-congolese-man-killed-by-security-men-over-allegations-of-shoplifting/
+2026-05-21 04:04:01 [INFO] 41. [LEADERSHIP] Votes Will Count, Says INEC Chairman Amupitan Ahead of Ekiti Governorship Election
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : https://leadership.ng/votes-will-count-says-inec-chairman-amupitan-ahead-of-ekiti-governorship-election/
+2026-05-21 04:04:01 [INFO] 42. [LEADERSHIP] Pin Up official: Account Registration And Security Features
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://leadership.ng/pin-up-official-account-registration-and-security-features/
+2026-05-21 04:04:01 [INFO] 43. [LEADERSHIP] Accelerate Security Reforms, Secure Communities Ahead Of 2027 Elections – Security Expert
+2026-05-21 04:04:01 [INFO]    Keywords : election, security
+2026-05-21 04:04:01 [INFO]    Link     : https://leadership.ng/accelerate-security-reforms-secure-communities-ahead-of-2027-elections-security-expert/
+2026-05-21 04:04:01 [INFO] 44. [LEADERSHIP] Kaduna’s Skills Revolution: A Bold Investment In Youth, Productivity And Security
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://leadership.ng/kadunas-skills-revolution-a-bold-investment-in-youth-productivity-and-security/
+2026-05-21 04:04:01 [INFO] 45. [TVCNEWS] Zamfara Government Treats 6842 In 17 Phases Of Medical Outreach
+2026-05-21 04:04:01 [INFO]    Keywords : government
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/zamfara-government-treats-6842-in-17-phases-of-medical-outreach/
+2026-05-21 04:04:01 [INFO] 46. [TVCNEWS] Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal's Re-election
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/matawalle-meets-aggrieved-assembly-aspirants-backs-tinubu-lawals-re-election/
+2026-05-21 04:04:01 [INFO] 47. [TVCNEWS] Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal's Re-election
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/matawalle-meets-aggrieved-assembly-aspirants-backs-tinubu-lawals-re-election/
+2026-05-21 04:04:01 [INFO] 48. [TVCNEWS] Makinde Signs Executive Order Regulating Vigilante, Security Groups In Oyo
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/makinde-signs-executive-order-regulating-vigilante-security-groups-in-oyo/
+2026-05-21 04:04:01 [INFO] 49. [TVCNEWS] Matawalle Meets Aggrieved Assembly Aspirants, Backs Tinubu, Lawal’s Re-election
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/matawalle-meets-aggrieved-assembly-aspirants-backs-tinubu-lawals-re-election/
+2026-05-21 04:04:01 [INFO] 50. [TVCNEWS] Oyo State Government, Security Agencies Clear Ibadan Streets of Destitutes, Beggars
+2026-05-21 04:04:01 [INFO]    Keywords : government, security
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/oyo-state-government-security-agencies-clear-ibadan-streets-of-destitutes-beggars/
+2026-05-21 04:04:01 [INFO] 51. [TVCNEWS] Tech Firm Calls For Cyber security Resilience At Cyber security Awards
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/tech-firm-calls-for-cyber-security-resilience-at-cyber-security-awards/
+2026-05-21 04:04:01 [INFO] 52. [TVCNEWS] FULL VIDEO: INEC Chairman Speaks On 2027 Elections, Electronic Transmission Of Results
+2026-05-21 04:04:01 [INFO]    Keywords : election
+2026-05-21 04:04:01 [INFO]    Link     : #top-video
+2026-05-21 04:04:01 [INFO] 53. [TVCNEWS] Zamfara Government Treats 6842 In 17 Phases Of Medical Outreach
+2026-05-21 04:04:01 [INFO]    Keywords : government
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/zamfara-government-treats-6842-in-17-phases-of-medical-outreach/
+2026-05-21 04:04:01 [INFO] 54. [TVCNEWS] WHO Declares Ebola Outbreak In DRC, Uganda Global Health Emergency
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://www.tvcnews.tv/who-declares-ebola-outbreak-in-drc-uganda-global-health-emergency/
+2026-05-21 04:04:01 [INFO] 55. [AUTHORITYNGR] Atiku unveils economic rescue, security plans as he visits ADC screening panel
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/20/atiku-unveils-economic-rescue-security-plans-as-he-visits-adc-screening-panel/
+2026-05-21 04:04:01 [INFO] 56. [AUTHORITYNGR] Presidency Pushes RegTech as Tool For Financial Inclusion, Trusted Digital Economy
+2026-05-21 04:04:01 [INFO]    Keywords : economy
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/20/presidency-pushes-regtech-as-tool-for-financial-inclusion-trusted-digital-economy/
+2026-05-21 04:04:01 [INFO] 57. [AUTHORITYNGR] ISSA 2026: How NSITF is driving inclusive social security through effective communication
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/06/issa-2026-how-nsitf-is-driving-inclusive-social-security-through-effective-communication/
+2026-05-21 04:04:01 [INFO] 58. [AUTHORITYNGR] Stanel CEO, Stanley Uzochukwu completes Oxford leadership programme months after trained in Harvard
+2026-05-21 04:04:01 [INFO]    Keywords : education
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/19/stanel-ceo-stanley-uzochukwu-completes-oxford-leadership-programme-months-after-trained-in-harvard/
+2026-05-21 04:04:01 [INFO] 59. [AUTHORITYNGR] X-raying NECO 25 years impactful journey
+2026-05-21 04:04:01 [INFO]    Keywords : education
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/14/x-raying-neco-25-years-impactful-journey/
+2026-05-21 04:04:01 [INFO] 60. [AUTHORITYNGR] JAMB sets 150 minimum score for university admissions, fixes deadline for 2026 exercise
+2026-05-21 04:04:01 [INFO]    Keywords : education
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/11/jamb-sets-150-minimum-score-for-university-admissions-fixes-deadline-for-2026-exercise/
+2026-05-21 04:04:01 [INFO] 61. [AUTHORITYNGR] Atiku unveils economic rescue, security plans as he visits ADC screening panel
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/20/atiku-unveils-economic-rescue-security-plans-as-he-visits-adc-screening-panel/
+2026-05-21 04:04:01 [INFO] 62. [AUTHORITYNGR] Protesters Occupy Health Ministry, Accuse NAFDAC Boss of Policy Abuse
+2026-05-21 04:04:01 [INFO]    Keywords : health
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/03/26/protesters-occupy-health-ministry-accuse-nafdac-boss-of-policy-abuse/
+2026-05-21 04:04:01 [INFO] 63. [AUTHORITYNGR] Alcohol Ban Controversy Sparks Protest, Renews Debate on Regulation
+2026-05-21 04:04:01 [INFO]    Keywords : protest
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/03/25/alcohol-ban-controversy-sparks-protest-renews-debate-on-regulation/
+2026-05-21 04:04:01 [INFO] 64. [AUTHORITYNGR] Atiku unveils economic rescue, security plans as he visits ADC screening panel
+2026-05-21 04:04:01 [INFO]    Keywords : security
+2026-05-21 04:04:01 [INFO]    Link     : https://authorityngr.com/2026/05/20/atiku-unveils-economic-rescue-security-plans-as-he-visits-adc-screening-panel/
+2026-05-21 04:04:01 [INFO] Saved 64 articles from 6 sources to 'scraped_articles.txt'
+2026-05-21 16:10:10 [INFO] Using site list: 'plateau_news_sites.csv'
+2026-05-21 16:11:03 [INFO] Using site list: 'plateau_news_sites_updated.csv'
+2026-05-21 16:11:33 [INFO] Selected 10 national + 2 state sites from 'plateau_news_sites_updated.csv' (10 national + 2 state total).
+2026-05-21 16:11:33 [INFO] Added 'Plateau' to keyword list for local relevance matching.
+2026-05-21 16:11:36 [INFO] Crawling radionigeria...
+2026-05-21 16:11:38 [INFO]   Fetching content: Army charges officers on tech-driven security reforms...
+2026-05-21 16:11:39 [INFO]   Fetching content: Anambra community protests sale of land reserved for development proje...
+2026-05-21 16:11:41 [INFO]   Fetching content: FG approves additional Deep Seaports to strengthen trade, logistics...
+2026-05-21 16:11:44 [INFO]   Fetching content: Union demands mental health facilities across government MDAs...
+2026-05-21 16:11:46 [INFO] Found 4 articles from radionigeria.
+2026-05-21 16:11:47 [INFO] Crawling nta...
+2026-05-21 16:11:48 [INFO] Found 0 articles from nta.
+2026-05-21 16:11:50 [INFO] Crawling dailytrust...
+2026-05-21 16:11:51 [INFO] Found 0 articles from dailytrust.
+2026-05-21 16:11:53 [INFO] Crawling thenews-chronicle...
+2026-05-21 16:11:57 [INFO] Found 0 articles from thenews-chronicle.
+2026-05-21 16:11:59 [INFO] Crawling channelstv...
+2026-05-21 16:12:01 [INFO]   Fetching content: Insecurity: Makinde Signs Executive Order On Local Security Regulation...
+2026-05-21 16:12:02 [INFO]   Fetching content: Truck Kills Two In Ondo Accident...
+2026-05-21 16:12:04 [INFO]   Fetching content: Security Operatives Bust Kidnappers’ Hideouts In Edo, Arrest 12 Suspec...
+2026-05-21 16:12:04 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:05 [INFO]   Fetching content: Ex-Imo Deputy Gov Madumere Emerges PDP Candidate For Imo East Senatori...
+2026-05-21 16:12:06 [INFO]   Fetching content: Kaduna Assembly Speaker, Deputy, Majority Leader Secure APC Tickets Th...
+2026-05-21 16:12:06 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:07 [INFO]   Fetching content: ‘Political Conmen’, Kenneth Okonkwo Fires At Obi, Kwankwaso Over ADC E...
+2026-05-21 16:12:07 [ERROR] Error fetching javascript:void(0): No connection adapters were found for 'javascript:void(0)'
+2026-05-21 16:12:08 [INFO]   Fetching content: Wike Not Only Destabilizing Rivers State, But Also Politics Of Nigeria...
+2026-05-21 16:12:08 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:09 [INFO]   Fetching content: Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + Mor...
+2026-05-21 16:12:09 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:10 [INFO]   Fetching content: Politics Today...
+2026-05-21 16:12:10 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:11 [INFO]   Fetching content: Primaries: Why Parties Must Consider Open-Secret Ballot System - Ken O...
+2026-05-21 16:12:11 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:12 [INFO]   Fetching content: ‘Such Dirty Politics’, Stakeholders Share Views On APC Primaries Outco...
+2026-05-21 16:12:12 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:13 [INFO]   Fetching content: Performance Or Zoning: Issues Around Equity Trail Kwara APC Primaries ...
+2026-05-21 16:12:13 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:14 [INFO]   Fetching content: Head Of Service Of The Federation Speaks On Reforms, Accountability + ...
+2026-05-21 16:12:14 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 16:12:15 [INFO] Found 13 articles from channelstv.
+2026-05-21 16:12:15 [INFO] Crawling trusttv...
+2026-05-21 16:12:16 [INFO] Found 0 articles from trusttv.
+2026-05-21 16:12:18 [INFO] Crawling newscentral...
+2026-05-21 16:12:20 [INFO]   Fetching content: Ukraine Tightens Belarus Border Security Over Attack Fears...
+2026-05-21 16:12:22 [INFO]   Fetching content: Shakira Wins £50 Million Tax Refund from Spanish Government...
+2026-05-21 16:12:23 [INFO]   Fetching content: Burkina Faso Tightens Security After Mali Attacks...
+2026-05-21 16:12:25 [INFO] Found 3 articles from newscentral.
+2026-05-21 16:12:27 [INFO] Crawling newslodge...
+2026-05-21 16:12:29 [INFO] Found 0 articles from newslodge.
+2026-05-21 16:12:31 [INFO] Crawling nationaltelescope...
+2026-05-21 16:12:33 [INFO] Found 0 articles from nationaltelescope.
+2026-05-21 16:12:35 [INFO] Crawling authorityngr...
+2026-05-21 16:12:41 [INFO]   Fetching content: Atiku unveils economic rescue, security plans as he visits ADC screeni...
+2026-05-21 16:12:43 [INFO]   Fetching content: ‘Politics Must Not Become Criminality’ — Nasarawa Youths Demand Prosec...
+2026-05-21 16:12:45 [INFO]   Fetching content: ISSA 2026: How NSITF is driving inclusive social security through effe...
+2026-05-21 16:12:51 [INFO]   Fetching content: Alcohol Ban Controversy Sparks Protest, Renews Debate on Regulation...
+2026-05-21 16:12:56 [INFO] Found 4 articles from authorityngr.
+2026-05-21 16:12:58 [INFO] Crawling plateaustate...
+2026-05-21 16:12:59 [INFO] Found 0 articles from plateaustate.
+2026-05-21 16:13:01 [INFO] Crawling bbc...
+2026-05-21 16:13:02 [INFO] Found 0 articles from bbc.
+2026-05-21 16:13:03 [INFO] Crawling reuters...
+2026-05-21 16:13:03 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-21 16:13:03 [INFO] Found 0 articles from reuters.
+2026-05-21 16:13:05 [INFO] --- Scraped Headlines ---
+2026-05-21 16:13:05 [INFO] 1. [RADIONIGERIA] Army charges officers on tech-driven security reforms
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/21/army-charges-officers-on-tech-driven-security-reforms/
+2026-05-21 16:13:05 [INFO] 2. [RADIONIGERIA] Anambra community protests sale of land reserved for development projects
+2026-05-21 16:13:05 [INFO]    Keywords : protest
+2026-05-21 16:13:05 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/21/anambra-community-protests-sale-of-land-reserved-for-development-projects/
+2026-05-21 16:13:05 [INFO] 3. [RADIONIGERIA] FG approves additional Deep Seaports to strengthen trade, logistics
+2026-05-21 16:13:05 [INFO]    Keywords : government
+2026-05-21 16:13:05 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/19/fg-approves-additional-deep-seaports-to-strengthen-trade-logistics/
+2026-05-21 16:13:05 [INFO] 4. [RADIONIGERIA] Union demands mental health facilities across government MDAs
+2026-05-21 16:13:05 [INFO]    Keywords : government
+2026-05-21 16:13:05 [INFO]    Link     : https://radionigeria.gov.ng/2026/05/21/union-demands-mental-health-facilities-across-government-mdas/
+2026-05-21 16:13:05 [INFO] 5. [CHANNELSTV] Insecurity: Makinde Signs Executive Order On Local Security Regulation In Oyo
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : https://www.channelstv.com/2026/05/21/insecurity-makinde-signs-executive-order-on-local-security-regulation-in-oyo/
+2026-05-21 16:13:05 [INFO] 6. [CHANNELSTV] Truck Kills Two In Ondo Accident
+2026-05-21 16:13:05 [INFO]    Keywords : accident
+2026-05-21 16:13:05 [INFO]    Link     : https://www.channelstv.com/2026/05/20/truck-kills-two-in-ondo-accident/
+2026-05-21 16:13:05 [INFO] 7. [CHANNELSTV] Security Operatives Bust Kidnappers’ Hideouts In Edo, Arrest 12 Suspects
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 8. [CHANNELSTV] Ex-Imo Deputy Gov Madumere Emerges PDP Candidate For Imo East Senatorial Seat
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : https://www.channelstv.com/2026/05/20/ex-imo-deputy-gov-madumere-emerges-pdp-candidate-for-imo-east-senatorial-seat/
+2026-05-21 16:13:05 [INFO] 9. [CHANNELSTV] Kaduna Assembly Speaker, Deputy, Majority Leader Secure APC Tickets Through Consensus
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 10. [CHANNELSTV] ‘Political Conmen’, Kenneth Okonkwo Fires At Obi, Kwankwaso Over ADC Exit | Politics Today
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : javascript:void(0)
+2026-05-21 16:13:05 [INFO] 11. [CHANNELSTV] Wike Not Only Destabilizing Rivers State, But Also Politics Of Nigeria
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 12. [CHANNELSTV] Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + More|Politics Today
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 13. [CHANNELSTV] Politics Today
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 14. [CHANNELSTV] Primaries: Why Parties Must Consider Open-Secret Ballot System - Ken Okolugbo | Lunchtime Politics
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 15. [CHANNELSTV] ‘Such Dirty Politics’, Stakeholders Share Views On APC Primaries Outcome | Lunchtime Politics
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 16. [CHANNELSTV] Performance Or Zoning: Issues Around Equity Trail Kwara APC Primaries + More | Lunchtime Politics
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 17. [CHANNELSTV] Head Of Service Of The Federation Speaks On Reforms, Accountability + More | Politics Today
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : #
+2026-05-21 16:13:05 [INFO] 18. [NEWSCENTRAL] Ukraine Tightens Belarus Border Security Over Attack Fears
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : https://newscentraltv.com/ukraine-tightens-belarus-border-security-over-attack-fears/
+2026-05-21 16:13:05 [INFO] 19. [NEWSCENTRAL] Shakira Wins £50 Million Tax Refund from Spanish Government
+2026-05-21 16:13:05 [INFO]    Keywords : government
+2026-05-21 16:13:05 [INFO]    Link     : https://newscentraltv.com/category/entertainment/
+2026-05-21 16:13:05 [INFO] 20. [NEWSCENTRAL] Burkina Faso Tightens Security After Mali Attacks
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : https://newscentraltv.com/category/mali/
+2026-05-21 16:13:05 [INFO] 21. [AUTHORITYNGR] Atiku unveils economic rescue, security plans as he visits ADC screening panel
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : https://authorityngr.com/2026/05/20/atiku-unveils-economic-rescue-security-plans-as-he-visits-adc-screening-panel/
+2026-05-21 16:13:05 [INFO] 22. [AUTHORITYNGR] ‘Politics Must Not Become Criminality’ — Nasarawa Youths Demand Prosecution Over Alleged Attack on Prof. Dandaura
+2026-05-21 16:13:05 [INFO]    Keywords : politics
+2026-05-21 16:13:05 [INFO]    Link     : https://authorityngr.com/2026/05/21/politics-must-not-become-criminality-nasarawa-youths-demand-prosecution-over-alleged-attack-on-prof-dandaura/
+2026-05-21 16:13:05 [INFO] 23. [AUTHORITYNGR] ISSA 2026: How NSITF is driving inclusive social security through effective communication
+2026-05-21 16:13:05 [INFO]    Keywords : security
+2026-05-21 16:13:05 [INFO]    Link     : https://authorityngr.com/2026/05/06/issa-2026-how-nsitf-is-driving-inclusive-social-security-through-effective-communication/
+2026-05-21 16:13:05 [INFO] 24. [AUTHORITYNGR] Alcohol Ban Controversy Sparks Protest, Renews Debate on Regulation
+2026-05-21 16:13:05 [INFO]    Keywords : protest
+2026-05-21 16:13:05 [INFO]    Link     : https://authorityngr.com/2026/03/25/alcohol-ban-controversy-sparks-protest-renews-debate-on-regulation/
+2026-05-21 16:13:05 [INFO] Saved 24 articles from 4 sources to 'scraped_articles.txt'
+2026-05-21 16:26:20 [INFO] Using site list: 'plateau_news_sites_updated.csv'
+2026-05-21 16:26:49 [INFO] Selected 10 national + 2 state sites from 'plateau_news_sites_updated.csv' (10 national + 2 state total).
+2026-05-21 16:26:49 [INFO] Keywords scoped to state 'Plateau': ['government Plateau', 'construction Plateau', 'security Plateau', 'politics Plateau', 'protest Plateau', 'accident Plateau', 'riots Plateau', 'terrorist attack Plateau', 'military deployment Plateau', 'police deployment Plateau']
+2026-05-21 16:26:53 [INFO] Crawling radionigeria...
+2026-05-21 16:26:53 [INFO] Found 0 articles from radionigeria.
+2026-05-21 16:26:55 [INFO] Crawling nta...
+2026-05-21 16:26:57 [INFO] Found 0 articles from nta.
+2026-05-21 16:26:59 [INFO] Crawling dailytrust...
+2026-05-21 16:27:01 [INFO] Found 0 articles from dailytrust.
+2026-05-21 16:27:03 [INFO] Crawling thenews-chronicle...
+2026-05-21 16:27:07 [INFO] Found 0 articles from thenews-chronicle.
+2026-05-21 16:27:09 [INFO] Crawling channelstv...
+2026-05-21 16:27:10 [INFO] Found 0 articles from channelstv.
+2026-05-21 16:27:12 [INFO] Crawling trusttv...
+2026-05-21 16:27:13 [INFO] Found 0 articles from trusttv.
+2026-05-21 16:27:15 [INFO] Crawling newslodge...
+2026-05-21 16:27:17 [INFO] Found 0 articles from newslodge.
+2026-05-21 16:27:19 [INFO] Crawling nationaltelescope...
+2026-05-21 16:27:20 [INFO] Found 0 articles from nationaltelescope.
+2026-05-21 16:27:22 [INFO] Crawling newscentral...
+2026-05-21 16:27:24 [INFO] Found 0 articles from newscentral.
+2026-05-21 16:27:26 [INFO] Crawling authorityngr...
+2026-05-21 16:27:29 [INFO] Found 0 articles from authorityngr.
+2026-05-21 16:27:29 [INFO] Crawling plateaustate...
+2026-05-21 16:27:30 [INFO] Found 0 articles from plateaustate.
+2026-05-21 16:27:32 [INFO] Crawling bbc...
+2026-05-21 16:27:32 [INFO] Found 0 articles from bbc.
+2026-05-21 16:27:34 [INFO] Crawling reuters...
+2026-05-21 16:27:35 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-21 16:27:35 [INFO] Found 0 articles from reuters.
+2026-05-21 16:27:37 [INFO] --- Scraped Headlines ---
+2026-05-21 16:27:37 [INFO] Saved 0 articles from 0 sources to 'scraped_articles.txt'
+2026-05-21 16:38:18 [INFO] Using site list: 'federal_capital_territory_news_sites_updated.csv'
+2026-05-21 16:38:24 [INFO] Selected 10 national + 5 state sites from 'federal_capital_territory_news_sites_updated.csv' (10 national + 5 state total).
+2026-05-21 16:38:24 [INFO] Keywords scoped to state 'Federal Capital Territory': ['government Federal Capital Territory', 'construction Federal Capital Territory', 'security Federal Capital Territory', 'politics Federal Capital Territory', 'protest Federal Capital Territory', 'accident Federal Capital Territory', 'riots Federal Capital Territory', 'terrorist attack Federal Capital Territory', 'military deployment Federal Capital Territory', 'police deployment Federal Capital Territory']
+2026-05-21 16:38:27 [INFO] Crawling radionigeria...
+2026-05-21 16:38:28 [INFO] Found 0 articles from radionigeria.
+2026-05-21 16:38:30 [INFO] Crawling nta...
+2026-05-21 16:38:32 [INFO] Found 0 articles from nta.
+2026-05-21 16:38:34 [INFO] Crawling dailytrust...
+2026-05-21 16:38:35 [INFO] Found 0 articles from dailytrust.
+2026-05-21 16:38:37 [INFO] Crawling thenews-chronicle...
+2026-05-21 16:38:41 [INFO] Found 0 articles from thenews-chronicle.
+2026-05-21 16:38:43 [INFO] Crawling channelstv...
+2026-05-21 16:38:44 [INFO] Found 0 articles from channelstv.
+2026-05-21 16:38:46 [INFO] Crawling trusttv...
+2026-05-21 16:38:47 [INFO] Found 0 articles from trusttv.
+2026-05-21 16:38:49 [INFO] Crawling newscentral...
+2026-05-21 16:38:51 [INFO] Found 0 articles from newscentral.
+2026-05-21 16:38:53 [INFO] Crawling thenigerian...
+2026-05-21 16:38:54 [INFO] Found 0 articles from thenigerian.
+2026-05-21 16:38:54 [INFO] Crawling newslodge...
+2026-05-21 16:38:56 [INFO] Found 0 articles from newslodge.
+2026-05-21 16:38:58 [INFO] Crawling chprbn...
+2026-05-21 16:38:59 [ERROR] Error fetching https://www.chprbn.gov.ng/: HTTPSConnectionPool(host='www.chprbn.gov.ng', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.chprbn.gov.ng'. (_ssl.c:1032)")))
+2026-05-21 16:38:59 [INFO] Found 0 articles from chprbn.
+2026-05-21 16:39:01 [INFO] Crawling frsc...
+2026-05-21 16:39:02 [INFO] Found 0 articles from frsc.
+2026-05-21 16:39:04 [INFO] Crawling fctirs...
+2026-05-21 16:39:08 [INFO] Found 0 articles from fctirs.
+2026-05-21 16:39:10 [INFO] Crawling nepc...
+2026-05-21 16:39:13 [INFO] Found 0 articles from nepc.
+2026-05-21 16:39:15 [INFO] Crawling csonews24...
+2026-05-21 16:39:16 [INFO] Found 0 articles from csonews24.
+2026-05-21 16:39:18 [INFO] Crawling bbc...
+2026-05-21 16:39:19 [INFO] Found 0 articles from bbc.
+2026-05-21 16:39:21 [INFO] Crawling reuters...
+2026-05-21 16:39:21 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-21 16:39:21 [INFO] Found 0 articles from reuters.
+2026-05-21 16:39:22 [INFO] --- Scraped Headlines ---
+2026-05-21 16:39:22 [INFO] Saved 0 articles from 0 sources to 'scraped_articles.txt'
+2026-05-21 17:01:44 [INFO] Using site list: 'lagos_news_sites_updated.csv'
+2026-05-21 17:02:30 [INFO] Selected 10 national + 5 state sites from 'lagos_news_sites_updated.csv' (10 national + 5 state total).
+2026-05-21 17:02:30 [INFO] Keywords scoped to state 'Lagos': ['government Lagos', 'construction Lagos', 'security Lagos', 'politics Lagos', 'protest Lagos', 'accident Lagos', 'riots Lagos', 'terrorist attack Lagos', 'military deployment Lagos', 'police deployment Lagos']
+2026-05-21 17:02:34 [INFO] Crawling radionigeria...
+2026-05-21 17:02:34 [INFO] Found 0 articles from radionigeria.
+2026-05-21 17:02:36 [INFO] Crawling nta...
+2026-05-21 17:02:38 [INFO] Found 0 articles from nta.
+2026-05-21 17:02:40 [INFO] Crawling dailytrust...
+2026-05-21 17:02:40 [INFO] Found 0 articles from dailytrust.
+2026-05-21 17:02:41 [INFO] Crawling thenews-chronicle...
+2026-05-21 17:02:45 [INFO] Found 0 articles from thenews-chronicle.
+2026-05-21 17:02:47 [INFO] Crawling channelstv...
+2026-05-21 17:02:48 [INFO]   Fetching content: Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + Mor...
+2026-05-21 17:02:48 [ERROR] Error fetching #: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2026-05-21 17:02:49 [INFO] Found 1 articles from channelstv.
+2026-05-21 17:02:51 [INFO] Crawling thenigerian...
+2026-05-21 17:02:52 [INFO] Found 0 articles from thenigerian.
+2026-05-21 17:02:54 [INFO] Crawling tvcnews...
+2026-05-21 17:02:56 [INFO]   Fetching content: Enhancing Public Order: ‎Lagos Expands Approved Protest Grounds...
+2026-05-21 17:02:57 [INFO] Found 1 articles from tvcnews.
+2026-05-21 17:02:59 [INFO] Crawling silverbirdgroup...
+2026-05-21 17:03:00 [INFO] Found 0 articles from silverbirdgroup.
+2026-05-21 17:03:02 [INFO] Crawling trusttv...
+2026-05-21 17:03:04 [INFO] Found 0 articles from trusttv.
+2026-05-21 17:03:06 [INFO] Crawling tvccommunications...
+2026-05-21 17:03:08 [INFO] Found 0 articles from tvccommunications.
+2026-05-21 17:03:08 [INFO] Crawling okaynews...
+2026-05-21 17:03:09 [INFO]   Fetching content: Okay News...
+2026-05-21 17:03:11 [INFO]   Fetching content: Sanwo-Olu Endorses Hamzat in Lagos APC Primaries...
+2026-05-21 17:03:12 [INFO] Found 2 articles from okaynews.
+2026-05-21 17:03:14 [INFO] Crawling livenews...
+2026-05-21 17:03:17 [INFO] Found 0 articles from livenews.
+2026-05-21 17:03:19 [INFO] Crawling cvnewsng...
+2026-05-21 17:03:21 [INFO] Found 0 articles from cvnewsng.
+2026-05-21 17:03:23 [INFO] Crawling irawofm...
+2026-05-21 17:03:24 [INFO] Found 0 articles from irawofm.
+2026-05-21 17:03:26 [INFO] Crawling bbc...
+2026-05-21 17:03:27 [INFO] Found 0 articles from bbc.
+2026-05-21 17:03:29 [INFO] Crawling reuters...
+2026-05-21 17:03:30 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-21 17:03:30 [INFO] Found 0 articles from reuters.
+2026-05-21 17:03:32 [INFO] --- Scraped Headlines ---
+2026-05-21 17:03:32 [INFO] 1. [CHANNELSTV] Rivers Politics, Samuel Ajose's Withdrawal From Lagos Guber Poll + More|Politics Today
+2026-05-21 17:03:32 [INFO]    Keywords : politics Lagos
+2026-05-21 17:03:32 [INFO]    Link     : #
+2026-05-21 17:03:32 [INFO] 2. [TVCNEWS] Enhancing Public Order: ‎Lagos Expands Approved Protest Grounds
+2026-05-21 17:03:32 [INFO]    Keywords : protest Lagos
+2026-05-21 17:03:32 [INFO]    Link     : https://www.tvcnews.tv/enhancing-public-order-lagos-expands-approved-protest-grounds/
+2026-05-21 17:03:32 [INFO] 3. [OKAYNEWS] Okay News
+2026-05-21 17:03:32 [INFO]    Keywords : security Lagos, politics Lagos
+2026-05-21 17:03:32 [INFO]    Link     : https://www.okaynews.com/tinubu-names-39-year-old-professor-segun-aina-as-jambs-youngest-registrar/
+2026-05-21 17:03:32 [INFO] 4. [OKAYNEWS] Sanwo-Olu Endorses Hamzat in Lagos APC Primaries
+2026-05-21 17:03:32 [INFO]    Keywords : politics Lagos
+2026-05-21 17:03:32 [INFO]    Link     : https://www.okaynews.com/sanwo-olu-endorses-hamzat-in-lagos-apc-primaries/
+2026-05-21 17:03:32 [INFO] Saved 4 articles from 3 sources to 'scraped_articles.txt'
+2026-05-21 17:10:32 [INFO] Using site list: 'nairobi_county_news_sites_updated.csv'
+2026-05-21 17:10:38 [INFO] Selected 10 national + 4 state sites from 'nairobi_county_news_sites_updated.csv' (10 national + 4 state total).
+2026-05-21 17:10:38 [INFO] Keywords scoped to state 'Nairobi County': ['government Nairobi County', 'construction Nairobi County', 'security Nairobi County', 'politics Nairobi County', 'protest Nairobi County', 'accident Nairobi County', 'riots Nairobi County', 'terrorist attack Nairobi County', 'military deployment Nairobi County', 'police deployment Nairobi County']
+2026-05-21 17:10:41 [INFO] Crawling k24tv...
+2026-05-21 17:10:42 [INFO] Found 0 articles from k24tv.
+2026-05-21 17:10:44 [INFO] Crawling pdmholdings...
+2026-05-21 17:10:45 [INFO] Found 0 articles from pdmholdings.
+2026-05-21 17:10:47 [INFO] Crawling gbskenya...
+2026-05-21 17:10:51 [INFO] Found 0 articles from gbskenya.
+2026-05-21 17:10:53 [INFO] Crawling royalmedia...
+2026-05-21 17:10:55 [INFO] Found 0 articles from royalmedia.
+2026-05-21 17:10:57 [INFO] Crawling immigration...
+2026-05-21 17:11:01 [INFO] Found 0 articles from immigration.
+2026-05-21 17:11:03 [INFO] Crawling kasstv...
+2026-05-21 17:11:09 [INFO]   Fetching content: Wajir Gets Power Boost as Government Rolls Out Ksh 7.7 Billion Hybrid ...
+2026-05-21 17:11:13 [INFO] Found 1 articles from kasstv.
+2026-05-21 17:11:15 [INFO] Crawling kenyantimes...
+2026-05-21 17:11:16 [ERROR] Error fetching https://www.kenyantimes.co.ke/: HTTPSConnectionPool(host='www.kenyantimes.co.ke', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))
+2026-05-21 17:11:16 [INFO] Found 0 articles from kenyantimes.
+2026-05-21 17:11:18 [INFO] Crawling switchtv...
+2026-05-21 17:11:20 [INFO] Found 0 articles from switchtv.
+2026-05-21 17:11:22 [INFO] Crawling elevatetv...
+2026-05-21 17:11:26 [INFO] Found 0 articles from elevatetv.
+2026-05-21 17:11:28 [INFO] Crawling standardmedia...
+2026-05-21 17:11:30 [INFO] Found 0 articles from standardmedia.
+2026-05-21 17:11:32 [INFO] Crawling governmentpress...
+2026-05-21 17:11:35 [INFO] Found 0 articles from governmentpress.
+2026-05-21 17:11:37 [INFO] Crawling klb...
+2026-05-21 17:11:45 [INFO] Found 0 articles from klb.
+2026-05-21 17:11:47 [INFO] Crawling nairobi...
+2026-05-21 17:11:51 [INFO] Found 0 articles from nairobi.
+2026-05-21 17:11:53 [INFO] Crawling nta...
+2026-05-21 17:11:54 [INFO] Found 0 articles from nta.
+2026-05-21 17:11:56 [INFO] Crawling bbc...
+2026-05-21 17:11:57 [INFO] Found 0 articles from bbc.
+2026-05-21 17:11:59 [INFO] Crawling reuters...
+2026-05-21 17:12:00 [WARNING] Failed to fetch https://www.reuters.com: Status code 401
+2026-05-21 17:12:00 [INFO] Found 0 articles from reuters.
+2026-05-21 17:12:02 [INFO] --- Scraped Headlines ---
+2026-05-21 17:12:02 [INFO] 1. [KASSTV] Wajir Gets Power Boost as Government Rolls Out Ksh 7.7 Billion Hybrid Electrification Plan
+2026-05-21 17:12:02 [INFO]    Keywords : government Nairobi County
+2026-05-21 17:12:02 [INFO]    Link     : https://kassdigital.co.ke/latest/wajir-gets-power-boost-as-government-rolls-out-ksh-7-7-billion-hybrid-electrification-plan/
+2026-05-21 17:12:02 [INFO] Saved 1 articles from 1 sources to 'scraped_articles.txt'

@@ -1,12 +1,14 @@
 import csv
 import os
+import re
+import time
 import requests
 from dotenv import load_dotenv
 
 load_dotenv()
 
 DISCOVERED_SITES_FILE = "newly_discovered_sites.txt"
-NEWS_SITES_CSV_FILE = "news_sites.csv"
+NEWS_SITES_CSV_FILE = "news_sites_updated.csv"
 
 
 def save_sites_to_file(sites, location_info=None, filepath=DISCOVERED_SITES_FILE):
@@ -40,7 +42,7 @@ def save_sites_to_csv(national_sites, state_sites, location_info, filepath=None)
     if filepath is None:
         if state:
             state_slug = state.lower().replace(" ", "_")
-            filepath = f"{state_slug}_news_sites.csv"
+            filepath = f"{state_slug}_news_sites_updated.csv"
         else:
             filepath = NEWS_SITES_CSV_FILE
 
@@ -81,70 +83,106 @@ def save_sites_to_csv(national_sites, state_sites, location_info, filepath=None)
     print(f"Saved {total} sites ({len(national_sites)} national, {len(state_sites)} state) to '{filepath}'")
 
 
-# ── Site Reputation Scoring ───────────────────────────────────────────────────
-# Known reputable outlets mapped by partial domain → trust score (0–100).
-# Higher score = better editorial reputation and reach.
-_TRUSTED_DOMAINS = {
-    # Global / pan-African
-    "bbc.com": 100, "reuters.com": 100, "apnews.com": 99,
-    "aljazeera.com": 98, "voanews.com": 94, "france24.com": 94,
-    "dw.com": 93, "bloomberg.com": 96, "africanews.com": 85,
-    # Major Nigerian national outlets
-    "channelstv.com": 96, "nta.ng": 90, "premiumtimesng.com": 93,
-    "punchng.com": 92, "vanguardngr.com": 90, "dailytrust.com": 91,
-    "thisdaylive.com": 89, "leadership.ng": 88,
-    "thenationonlineng.net": 88, "guardian.ng": 88,
-    "gazettengr.com": 85, "tvcnews.tv": 84, "trusttv.com": 82,
-    "radionigeria.gov.ng": 80, "aitonline.tv": 80,
-    "businessday.ng": 86, "coolfm.ng": 72,
-    "newscentral.africa": 78, "thenews-chronicle.com": 70,
-    # Plateau / North-central Nigeria
-    "prtvc.net": 80,
-}
-_LOW_QUALITY = {
-    "blogspot", "wordpress.com", "facebook.com", "twitter.com",
+# ── Site Legitimacy Scoring ──────────────────────────────────────────────────
+#
+# I am making use of the Internet Archive Wayback Machine CDX API (free, no key)
+# which returns the earliest archived snapshot date for a domain.  Established
+# news outlets have typically been indexed for many years; newly-registered
+# spam/fake sites have little or no archive history.
+
+_WAYBACK_CDX = "https://web.archive.org/cdx/search/cdx"
+
+# Social media and free-blog platforms are not news sources
+_SOCIAL_PLATFORMS = {
+    "facebook.com", "twitter.com", "x.com", "instagram.com",
+    "tiktok.com", "youtube.com", "blogspot", "wordpress.com",
     "wix.com", "weebly.com", "tumblr.com",
 }
+
+# TLDs strongly associated with spam / free throwaway domains
+_SPAM_TLDS = {
+    ".tk", ".ml", ".ga", ".cf", ".gq",
+    ".xyz", ".click", ".top", ".win", ".buzz", ".loan",
+}
+
+
+def _get_domain_age_years(domain):
+    """
+    Queries the Wayback Machine CDX API for the earliest archived snapshot of
+    the domain.  Returns approximate age in years, or 0 if no record is found.
+    """
+    try:
+        resp = requests.get(
+            _WAYBACK_CDX,
+            params={
+                "url": domain,
+                "matchType": "domain",
+                "output": "json",
+                "limit": "1",
+                "fl": "timestamp",
+            },
+            timeout=8,
+        )
+        data = resp.json()
+        if len(data) > 1:  # first element is the header row ["timestamp"]
+            year = int(data[1][0][:4])
+            return time.gmtime().tm_year - year
+    except Exception:
+        pass
+    return 0
 
 
 def _score_site(site):
     """
-    Returns a trust score (0–100) for a news site.  Known reputable outlets
-    are matched by domain; unknown sites are scored by quality heuristics.
+    Dynamic legitimacy score (0–100) for a discovered news site.
+    No hardcoded outlet names — works for any country.
+
+    Signals:
+      • Social / free-blog platform  → score 0 (disqualified)
+      • HTTPS                        → +15
+      • .gov / .edu TLD (any country) → +20
+      • Spam TLD                     → −20
+      • Domain age via Wayback CDX   → +10 (≥2 yrs), +20 (≥5 yrs), +30 (≥10 yrs)
     """
     url = site.get("url", "")
-    # Simple domain extraction without an extra import
     domain = url.split("//")[-1].split("/")[0].replace("www.", "").lower()
 
-    for known, score in _TRUSTED_DOMAINS.items():
-        if known in domain:
-            return score
-
-    if any(lq in domain for lq in _LOW_QUALITY):
+    if any(p in domain for p in _SOCIAL_PLATFORMS):
         return 0
 
-    score = 40
+    score = 25  # baseline for any non-social site
+
     if url.startswith("https://"):
-        score += 10
-    if ".gov." in domain:
         score += 15
-    name = (site.get("name") or "").lower()
-    if any(x in name for x in ["rosacomms", "bluetoolz", "virtual media"]):
-        score -= 30
-    return min(score, 69)  # Heuristic ceiling keeps whitelisted sites on top
+
+    # Country-agnostic .gov / .edu pattern (e.g. .gov.ng, .gov.uk, .edu.au)
+    if re.search(r"\.gov(\.[a-z]{2,3})?$|\.edu(\.[a-z]{2,3})?$", domain):
+        score += 20
+    elif any(domain.endswith(t) for t in _SPAM_TLDS):
+        score -= 20
+
+    age = _get_domain_age_years(domain)
+    if age >= 10:
+        score += 30
+    elif age >= 5:
+        score += 20
+    elif age >= 2:
+        score += 10
+
+    return max(0, min(score, 100))
 
 
-def select_top_sites(national_sites, state_sites, top_n=10):
+def select_top_sites(national_sites, state_sites, top_n_national=10, top_n_state=5):
     """
-    Ranks national sites by trust score and returns the top *top_n*.
-    All state/local sites are kept when there are *top_n* or fewer;
-    otherwise the top *top_n* state sites are returned.
+    Scores every site dynamically and returns the top *top_n_national* national
+    sites (default 10) and up to *top_n_state* state/local sites (default 5).
+    Scoring uses public signals only — no hardcoded domain lists.
     """
-    top_national = sorted(national_sites, key=_score_site, reverse=True)[:top_n]
-    if len(state_sites) <= top_n:
+    top_national = sorted(national_sites, key=_score_site, reverse=True)[:top_n_national]
+    if len(state_sites) <= top_n_state:
         top_state = state_sites
     else:
-        top_state = sorted(state_sites, key=_score_site, reverse=True)[:top_n]
+        top_state = sorted(state_sites, key=_score_site, reverse=True)[:top_n_state]
     return top_national, top_state
 
 
@@ -286,16 +324,20 @@ if __name__ == "__main__":
         )
 
     # Example coordinates for Jos, Nigeria
-    target_lat = 9.8965
-    target_lng = 8.8583
+    # target_lat = 9.8965
+    # target_lng = 8.8583
 
-    # ABUJA BASED MARKER
+    # # ABUJA BASED MARKER
     # target_lat = 9.041802 
     # target_lng = 7.406113
 
-    # LAGOS BASED MARKER
+    # # LAGOS BASED MARKER
     # target_lat = 6.5244
     # target_lng = 3.3792
+
+    # NAIROBI BASED MARKER
+    target_lat = -1.2921
+    target_lng = 36.8219
 
     print(f"Identifying location from coordinates ({target_lat}, {target_lng})...")
     location_info = get_location_from_coords(target_lat, target_lng, API_KEY)
@@ -325,7 +367,7 @@ if __name__ == "__main__":
 
     all_sites = national_sites + state_sites
 
-    print("\nRanking and selecting top sites...")
+    print("\nScoring sites via Wayback Machine domain-age check (this may take a moment)...")
     top_national, top_state = select_top_sites(national_sites, state_sites)
     print(f"Selected {len(top_national)} national and {len(top_state)} state/local sites.")
 
