@@ -4,14 +4,18 @@ import logging
 import os
 import re
 import time
+import urllib3
 import nltk
 import requests
 from bs4 import BeautifulSoup
 from logging.handlers import RotatingFileHandler
 from nltk.stem import WordNetLemmatizer
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote_plus
 
-DISCOVERED_SITES_FILE = "discovered_sites.txt"
+# Suppress "InsecureRequestWarning" for sites with expired/self-signed SSL certs
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+DISCOVERED_SITES_FILE = "newly_discovered_sites.txt"
 LOG_FILE = "news_scraping.log"
 ARTICLES_FILE = "scraped_articles.txt"
 
@@ -102,6 +106,18 @@ def _score_site(site):
         score += 10
 
     return max(0, min(score, 100))
+
+
+def _simplify_state_name(name):
+    """
+    Strips administrative suffixes so the state name matches how articles
+    actually refer to it.  E.g. 'Nairobi County' → 'Nairobi',
+    'Federal Capital Territory' → 'Abuja'.
+    """
+    return re.sub(
+        r"\b(County|State|Region|Province|Capital Territory|Governorate|District|Municipality)\b",
+        "", name, flags=re.IGNORECASE
+    ).strip()
 
 
 # ── Keyword Configuration ─────────────────────────────────────────────────────
@@ -295,9 +311,9 @@ class NewsCrawler:
         }
 
     def fetch_page(self, url):
-        """Fetches raw HTML from a URL."""
+        """Fetches raw HTML from a URL.  Tolerates expired/broken SSL certs."""
         try:
-            response = requests.get(url, headers=self.headers, timeout=10)
+            response = requests.get(url, headers=self.headers, timeout=10, verify=False)
             if response.status_code == 200:
                 return response.text
             else:
@@ -306,6 +322,19 @@ class NewsCrawler:
         except requests.RequestException as e:
             logger.error(f"Error fetching {url}: {e}")
             return None
+
+    @staticmethod
+    def _is_usable_url(url):
+        """Reject placeholder / non-navigable links."""
+        if not url:
+            return False
+        url_lower = url.strip().lower()
+        return not (
+            url_lower.startswith("#")
+            or url_lower.startswith("javascript:")
+            or url_lower.startswith("mailto:")
+            or url_lower.startswith("tel:")
+        )
 
     def fetch_article_content(self, url):
         """Fetches and extracts the main text content from an article page."""
@@ -335,7 +364,39 @@ class NewsCrawler:
 
         # Find all blocks containing articles
         containers = soup.select(site_meta["container_selector"])
-        
+
+        # ── Fallback: if generic selectors yield nothing, scan every <a> tag ──
+        if not containers:
+            logger.info(f"  (generic selectors missed for {site_name}, using broad link scan)")
+            for a_tag in soup.find_all("a", href=True):
+                href = a_tag.get("href", "")
+                if not self._is_usable_url(href):
+                    continue
+                title_text = a_tag.get_text(strip=True)
+                if not title_text or len(title_text) < 10:
+                    continue
+
+                # Clean up relative URLs
+                link = href
+                if link.startswith("/"):
+                    base_url = "/".join(site_meta["url"].split("/")[:3])
+                    link = base_url + link
+
+                # Use the closest paragraph/heading context
+                parent_text = a_tag.parent.get_text(separator=" ", strip=True) if a_tag.parent else title_text
+                matched = self.matcher.matched_keywords(parent_text)
+                if not matched:
+                    continue
+
+                articles.append({
+                    "source": site_name,
+                    "title": title_text,
+                    "link": link,
+                    "matched_keywords": matched,
+                })
+            return articles
+        # ── End fallback ─────────────────────────────────────────────────────
+
         for container in containers:
             title_element = container.select_one(site_meta["title_selector"])
             link_element = container.select_one(site_meta["link_selector"])
@@ -343,6 +404,10 @@ class NewsCrawler:
             if title_element and link_element:
                 title = title_element.get_text(strip=True)
                 link = link_element.get("href")
+
+                # Skip placeholder / non-navigable links
+                if not self._is_usable_url(link):
+                    continue
 
                 # Clean up relative URLs
                 if link and link.startswith("/"):
@@ -361,7 +426,7 @@ class NewsCrawler:
                     "link": link,
                     "matched_keywords": matched,
                 })
-        
+
         return articles
 
     def crawl_all(self):
@@ -375,10 +440,13 @@ class NewsCrawler:
             # Follow each article link to fetch its full text content
             for article in site_articles:
                 link = article.get("link")
-                if link:
-                    logger.info(f"  Fetching content: {article['title'][:70]}...")
-                    article["content"] = self.fetch_article_content(link)
-                    time.sleep(1)  # Politeness delay between article fetches
+                if not link or not self._is_usable_url(link):
+                    article["content"] = ""
+                    time.sleep(1)
+                    continue
+                logger.info(f"  Fetching content: {article['title'][:70]}...")
+                article["content"] = self.fetch_article_content(link)
+                time.sleep(1)  # Politeness delay between article fetches
 
             all_results.extend(site_articles)
             logger.info(f"Found {len(site_articles)} articles from {site_name}.")
@@ -419,6 +487,75 @@ def save_articles_to_file(results, filepath=ARTICLES_FILE):
     logger.info(f"Saved {len(results)} articles from {len(by_source)} sources to '{filepath}'")
 
 
+# ── Social Media Search ──────────────────────────────────────────────────────
+def search_social_media(state_name, country_name, keywords, matcher):
+    """
+    Searches Twitter/X and Facebook for state-specific keyword content using
+    DuckDuckGo HTML search (free, no API key).  Returns a list of article-style
+    dicts.
+    """
+    platforms = [
+        ("x.com OR twitter.com", "X/Twitter"),
+        ("facebook.com", "Facebook"),
+    ]
+    results = []
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    for keyword_phrase in keywords:
+        if not state_name or not state_name.strip():
+            continue
+
+        for site_domain, platform_name in platforms:
+            query = f'site:{site_domain} "{keyword_phrase}"'
+            logger.info(f"  Searching {platform_name}: {keyword_phrase}...")
+
+            try:
+                ddg_url = f"https://html.duckduckgo.com/html/?q={quote_plus(query)}"
+                resp = requests.get(ddg_url, headers=headers, timeout=12)
+                if resp.status_code != 200:
+                    logger.warning(f"    DuckDuckGo returned {resp.status_code}")
+                    continue
+
+                soup = BeautifulSoup(resp.text, "html.parser")
+                for result_div in soup.select(".result"):
+                    link_tag = result_div.select_one(".result__a, .result__url, a.result__snippet")
+                    title_tag = result_div.select_one(".result__a, a.result__title")
+                    snippet_tag = result_div.select_one(".result__snippet")
+
+                    if not link_tag or not title_tag:
+                        continue
+
+                    href = link_tag.get("href", "")
+                    title = title_tag.get_text(strip=True)
+                    snippet = snippet_tag.get_text(strip=True) if snippet_tag else ""
+
+                    if not href or not title or len(title) < 10:
+                        continue
+
+                    full_text = f"{title} {snippet}"
+                    matched = matcher.matched_keywords(full_text)
+                    if not matched:
+                        continue
+
+                    results.append({
+                        "source": f"{platform_name.lower().replace(' ', '_')}_{keyword_phrase.replace(' ', '_')[:20]}",
+                        "title": title,
+                        "link": href,
+                        "matched_keywords": matched,
+                        "content": snippet,
+                    })
+
+                time.sleep(2)  # Politeness delay between DDG queries
+            except Exception as e:
+                logger.warning(f"    Social search error: {e}")
+                continue
+
+    logger.info(f"  Social media search found {len(results)} relevant posts.")
+    return results
+
+
 # Execution
 if __name__ == "__main__":
     # Merge hardcoded config with any sites discovered by local_news_sites_finder.py.
@@ -429,14 +566,21 @@ if __name__ == "__main__":
     # Add the state name to keywords so articles mentioning the local state
     # are captured even if they don't match the base keyword list.
     state = site_metadata.get("state", "").strip()
-    if state:
-        active_keywords = [f"{kw} {state}" for kw in KEYWORDS]
-        logger.info(f"Keywords scoped to state '{state}': {active_keywords}")
+    state_simple = _simplify_state_name(state)
+    if state_simple:
+        active_keywords = [f"{kw} {state_simple}" for kw in KEYWORDS]
+        logger.info(f"Keywords scoped to state '{state}' (simplified: '{state_simple}'): {active_keywords}")
     else:
         active_keywords = list(KEYWORDS)
 
     crawler = NewsCrawler(config, keywords=active_keywords)
     scraped_data = crawler.crawl_all()
+
+    # ── Social media search ─────────────────────────────────────────────────
+    country = site_metadata.get("country", "").strip()
+    matcher = KeywordMatcher(active_keywords)
+    social_results = search_social_media(state_simple or state, country, active_keywords, matcher)
+    scraped_data.extend(social_results)
 
     logger.info("--- Scraped Headlines ---")
     for idx, article in enumerate(scraped_data, 1):

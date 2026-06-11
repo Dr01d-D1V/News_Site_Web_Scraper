@@ -327,17 +327,17 @@ if __name__ == "__main__":
     # target_lat = 9.8965
     # target_lng = 8.8583
 
-    # # ABUJA BASED MARKER
-    # target_lat = 9.041802 
-    # target_lng = 7.406113
+    # ABUJA BASED MARKER
+    target_lat = 9.041802 
+    target_lng = 7.406113
 
     # # LAGOS BASED MARKER
     # target_lat = 6.5244
     # target_lng = 3.3792
 
-    # NAIROBI BASED MARKER
-    target_lat = -1.2921
-    target_lng = 36.8219
+    # # NAIROBI BASED MARKER
+    # target_lat = -1.2921
+    # target_lng = 36.8219
 
     print(f"Identifying location from coordinates ({target_lat}, {target_lng})...")
     location_info = get_location_from_coords(target_lat, target_lng, API_KEY)

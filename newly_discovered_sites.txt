@@ -1,16 +1,17 @@
-# COUNTRY: Kenya
-# STATE: Nairobi County
-https://www.k24tv.co.ke/
-https://www.pdmholdings.com/
-https://www.gbskenya.com/
-https://www.royalmedia.co.ke/
-https://immigration.go.ke/
-https://www.kasstv.co.ke/
-https://www.kenyantimes.co.ke/
-https://www.switchtv.ke/
-https://www.elevatetv.co.ke/
-http://www.standardmedia.co.ke/
-http://www.governmentpress.go.ke/
-http://www.klb.co.ke/
-http://www.nairobi.go.ke/
-http://www.nta.ng/
+# COUNTRY: Nigeria
+# STATE: Federal Capital Territory
+https://radionigeria.gov.ng/
+http://nij.edu.ng/
+http://ekofm.lagosstate.gov.ng/
+https://benuetv.be.gov.ng/
+https://thenews-chronicle.com/
+https://newscentral.africa/
+https://thenigerian.news/
+https://nationaltelescope.com/
+https://newsclickng.com/
+https://www.nigeriancablenewsonline.com/
+https://www.chprbn.gov.ng/
+http://www.frsc.gov.ng/
+https://www.wfp.org/countries/nigeria
+http://fctirs.gov.ng/
+https://thecjid.org/
